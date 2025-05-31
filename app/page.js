@@ -5,12 +5,13 @@ import { BackgroundBeams } from "/app/ui/background-beams";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#3B3B1A]">
-      <div className="fixed inset-0 z-1 pointer-events-none">
+    <main className="flex min-h-screen flex-col">
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        <div className="fixed inset-0 bg-gradient-to-br from-[#23281a] via-[#2d3320] to-[#495544]" />
         <BackgroundBeams />
       </div>
-      <NavBar className="z-3" />
-      <div className='container mx-auto px-12 py-4 z-2'>
+      <NavBar />
+      <div className='container mx-auto px-12 py-4'>
         <HeroSection />
       </div>
     </main>

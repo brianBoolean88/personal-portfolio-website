@@ -5,10 +5,63 @@ import { TypeAnimation } from 'react-type-animation';
 import { CardBody, CardContainer, CardItem } from "/app/ui/3d-card";
 import ThreeDPin from './ThreeDPin'
 import Testimonial from './Testimonial.jsx';
+import {
+    DraggableCardBody,
+    DraggableCardContainer,
+} from "/app/ui/draggable-card.jsx";
+
+const items = [
+    {
+        title: "USACO Silver",
+        image: "/images/achievements/usaco_silver.png",
+        className: "absolute top-8 left-[8%] rotate-[-8deg]",
+    },
+    {
+        title: "IgniteCS 2nd Place (2022) + Honorable Mention (2023",
+        image: "/images/achievements/ignitecs_logo.png",
+        className: "absolute top-24 left-[40%] rotate-[6deg]",
+    },
+    {
+        title: "Seeking Science Magazine Initiative President",
+        image: "/images/achievements/seeking_science.png",
+        className: "absolute top-2 left-[50x%] rotate-[12deg]",
+    },
+    {
+        title: "CyberPatriot XVI 2nd Place Silver Award",
+        image: "/images/achievements/cyberpatriot_logo.png",
+        className: "absolute top-40 left-[15%] rotate-[-10deg]",
+    },
+    {
+        title: "Google Cybersecurity Certificate",
+        image: "/images/achievements/google_cybersec.png",
+        className: "absolute top-24 left-[50%] rotate-[-4deg]",
+    },
+    {
+        title: "Google Automation with Python Certificate",
+        image: "/images/achievements/google_automation.png",
+        className: "absolute top-10 left-[45%] rotate-[7deg]",
+    },
+    {
+        title: "FBLA 3rd Place National Award for Game Design",
+        image: "/images/achievements/fbla_third.png",
+        className: "absolute top-23 left-[25%] rotate-[13deg]",
+    },
+    {
+        title: "FBLA 7th State Award for Cybersecurity",
+        image: "/images/achievements/fbla_cyber.jpg",
+        className: "absolute top-20 left-[50%] rotate-[-6deg]",
+    },
+    {
+        title: "FBLA 5th State Award for Mobile App Development",
+        image: "/images/achievements/fbla_fifth.png",
+        className: "absolute top-34 left-[10%] rotate-[5deg]",
+    },
+];
 
 const HeroSection = () => {
     return (
         <div className='select-none'>
+
             <section id="hero">
                 <div className='grid grid-cols-1 lg:grid-cols-12 z-in'>
                     {/* Left side */}
@@ -166,10 +219,28 @@ const HeroSection = () => {
                         Achievements
                     </h1>
                     <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-
-
+                    <p className='text-[#ADB7BE] text-center text-base sm:text-lg lg:text-xl mt-7'>
+                       The cards below are draggable!
+                    </p>
                 </div>
 
+                <DraggableCardContainer className="relative flex min-h-screen w-full max-w-screen-xl mx-auto items-center justify-center">
+                    <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-extralight md:text-4xl text-white italic">
+                        "The only way to do great work is to love what you do." - Steve Jobs
+                    </p>
+                    {items.map((item) => (
+                        <DraggableCardBody key={item.title} className={item.className}>
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className="pointer-events-none relative z-10 h-80 w-80 object-cover"
+                            />
+                            <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+                                {item.title}
+                            </h3>
+                        </DraggableCardBody>
+                    ))}
+                </DraggableCardContainer>
             </section>
         </div>
 
