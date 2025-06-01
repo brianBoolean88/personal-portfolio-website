@@ -7,12 +7,7 @@ https://colorhunt.co/palette/e7efc7aec8a48a784e3b3b1a
 
 Aceternity UI
 https://ui.aceternity.com/components/background-boxes
+c=
 
-
-
-<ThreeDPin
-    title={"VEX Robotics Competition Mentor"}
-    description={"Mentored high school students in VEX Robotics Competition, guiding them through robot design, programming, and competition strategies. Fostered teamwork and problem-solving skills."}
-    img={"/images/cyberbots.png"}
-    href={"https://docs.google.com/document/d/1XoSspJNDHufzGztKKlqMVrmur7Gf-yw3RUnylrSuaEo/edit?usp=sharing"}
-/>
+smoothly scrolling sections for pages
+contact form

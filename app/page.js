@@ -2,6 +2,7 @@
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import { BackgroundBeams } from "/app/ui/background-beams";
+import { Footer } from '/app/components/Footer.jsx';
 
 export default function Home() {
   return (
@@ -11,9 +12,12 @@ export default function Home() {
         <BackgroundBeams />
       </div>
       <NavBar />
+
       <div className='container mx-auto px-12 py-4'>
         <HeroSection />
       </div>
+      <Footer />
+
     </main>
   );
 }
