@@ -130,12 +130,11 @@ const projects = () => {
     useOutsideClick(ref, () => setActive(null));
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16">
+        <div className="select-none flex flex-col items-center justify-center min-h-screen px-4 py-0">
 
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
             >
                 <ContainerScroll
@@ -188,8 +187,7 @@ const projects = () => {
 
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
             >
                 <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
@@ -514,7 +512,7 @@ const projects = () => {
                             Leadership Legends
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            Leadership Legends is a video game made for the FBLA video game design challenge, another project that was led by me. There were a total of 2 group members including me. We made it to 3rd in nationals for the FBLA National Leadership Conference. We introduced elements of the gameplay that we enjoyed making. This video game was created on Godot, which was used for FBLA Connect+ as well.
+                            Leadership Legends is a video game made for the FBLA video game design challenge, another project that was led by me. I worked with a pixel art artist. We made it to 3rd in nationals for the FBLA National Leadership Conference. We introduced elements of the gameplay that we enjoyed making. This video game was created on Godot, which was used for FBLA Connect+ as well.
                         </p>
                     </div>
                     <img

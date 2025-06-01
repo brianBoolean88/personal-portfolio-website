@@ -94,12 +94,11 @@ const HeroSection = () => {
 
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
             >
                 <section id="hero">
-                    <div className='mt-11 lg:mb-50 grid grid-cols-1 lg:grid-cols-12 z-in'>
+                    <div className='mt-30 lg:mb-50 grid grid-cols-1 lg:grid-cols-12 z-in'>
                         {/* Left side */}
                         <div className='mb-20 sm:mb-25 col-span-7 place-self-center text-center lg:text-left'>
                             <h1 className="select-none text-white mb-4 text-4xl lg:text-5xl font-extrabold">
@@ -148,7 +147,7 @@ const HeroSection = () => {
                                     className='select-none px-6 py-3 w-full lg:w-fit rounded-full mr-4 bg-transparent hover:bg-[#AEC8A4] text-white border border-white mt-4 text-xl inline-block text-center'
                                     aria-label='Download my resume.'
                                 >
-                                    Download CV
+                                    Download Resume
                                 </a>
                             </div>
                         </div>
@@ -327,7 +326,7 @@ const HeroSection = () => {
             </section>
 
 
-            <motion
+            <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -352,7 +351,7 @@ const HeroSection = () => {
                     >
                     </InfiniteMovingCards>
                 </section>
-            </motion>
+            </motion.div>
 
         </div>
     )

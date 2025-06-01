@@ -1,13 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState, useRef } from "react";
 import { AnimatedTestimonials } from "/app/ui/animated-testimonials";
 import { Label } from "/app/ui/label.jsx";
 import { Input } from "/app/ui/input.jsx";
 import { cn } from "/lib/utils";
-import { Rnd } from "react-rnd";
+import ReCAPTCHA from "react-google-recaptcha";
 
-
+const SITE_KEY = "6LcwvlIrAAAAAL02hM9SCYwF3AByO7IISjyQeiv0";
 
 const contactMethods = [
     {
@@ -64,6 +64,9 @@ const LabelInputContainer = ({
 
 
 const Contact = () => {
+    const recaptchaRef = useRef(null);
+    const [captchaToken, setCaptchaToken] = useState("");
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const form = e.target;
@@ -71,19 +74,32 @@ const Contact = () => {
             firstname: form.firstname.value,
             lastname: form.lastname.value,
             email: form.email.value,
-            subject: form.text.value,
+            subject: form.subject.value,
             message: form.message.value,
         };
 
+        if (!data.firstname || !data.lastname || !data.email || !data.subject || !data.message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        if (!captchaToken) {
+            alert("Please complete the reCAPTCHA.");
+            return;
+        }
+
+        alert("Message queued for sending. Press OK to continue.");
         try {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data),
+                body: JSON.stringify({ ...data, token: captchaToken }),
             });
             if (res.ok) {
                 alert('Message sent!');
                 form.reset();
+                setCaptchaToken("");
+                recaptchaRef.current.reset();
             } else {
                 alert('Failed to send message.');
             }
@@ -92,7 +108,7 @@ const Contact = () => {
         }
     };
     return (
-        <div className="mt-50 mb-50 lg:mb-100 w-full h-full">
+        <div className="select-none mt-50 mb-50 lg:mb-100 w-full h-full">
             <AnimatedTestimonials contact={contactMethods} />
 
             <div
@@ -101,7 +117,7 @@ const Contact = () => {
                     Contact Form
                 </h2>
                 <p className="mt-2 max-w-sm text-sm text-neutral-400">
-                    Send me a message, and I will get back to you as soon as possible.
+                    If there is no ReCAPTCHA, please reload the page or disable your adblocker. If you are still having issues, please contact me through my social media links below. You cannot send a message without completing the ReCAPTCHA.
                 </p>
                 <form className="my-8" onSubmit={handleSubmit}>
                     <div
@@ -122,13 +138,20 @@ const Contact = () => {
 
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="subject">Subject</Label>
-                        <Input id="text" placeholder="Hiring Position" type="text" />
+                        <Input id="subject" placeholder="Hiring Position" type="text" />
                     </LabelInputContainer>
 
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="message">Message</Label>
                         <Input id="message" placeholder="Hi! I would love to discuss about hiring you!" type="textarea" />
                     </LabelInputContainer>
+
+                    <ReCAPTCHA
+                        sitekey={SITE_KEY}
+                        ref={recaptchaRef}
+                        className="mb-4"
+                        onChange={setCaptchaToken}
+                    />
 
                     <button
                         className="group/btn relative block h-10 w-full rounded-md bg-[#8A784E] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"

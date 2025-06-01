@@ -1,49 +1,64 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import NavLink from './NavLink'
 import NavAnchor from './NavAnchor'
 
-const navLinks = [
-    {
-        title:"About",
-        path: "#about",
-    },
-    {
-        title:"Projects",
-        path: "#projects",
-    },
-    {
-        title:"Contact",
-        path: "#contact",
-    }
-]
-
 const NavBar = () => {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     return (
-        <nav className='sticky top-0 z-100 select-none mt-5 ml-0 mr-0 sm:ml-2 sm:mr-1'>
-            <div className='flex flex-wrap items-center justify-between mx-auto pl-4 sm:p-8'>
-                <Link href={"/"} className='text-5xl text-white font-semibold'>
-                    <div className="inline-block mr-2 transition-transform duration-300 ease-in-out hover:scale-105">
+        <>
+            {/* Hamburger Button */}
+            <button
+                className="fixed top-6 left-6 z-20 flex flex-col justify-center items-center w-10 h-10 bg-[#222] rounded-md"
+                onClick={() => setSidebarOpen(true)}
+                aria-label="Open sidebar"
+            >
+                <span className="block w-6 h-0.5 bg-white mb-1"></span>
+                <span className="block w-6 h-0.5 bg-white mb-1"></span>
+                <span className="block w-6 h-0.5 bg-white"></span>
+            </button>
+
+            {/* Sidebar Overlay */}
+            <div
+                className={`fixed inset-0 bg-black bg-opacity-40 z-[150] transition-opacity duration-300
+                    ${sidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                onClick={() => setSidebarOpen(false)}
+            />
+
+            {/* Sidebar */}
+            <aside
+                className={`fixed top-0 left-0 h-full w-64 lg:w-84 bg-[#222] z-[200] shadow-lg transform transition-transform duration-300
+                    ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
+            >
+                <div className="flex items-center justify-between p-6">
+                    <Link href={"/"} className='text-3xl text-white font-semibold flex items-center'>
                         <Image
                             src="/images/nav_img.png"
                             alt="Logo"
-                            width={80}
-                            height={80}
-                            className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] object-contain hover:filter hover:invert-100 transition-all duration-300 ease-in-out"
+                            width={48}
+                            height={48}
+                            className="w-12 h-12 object-contain mr-2"
                         />
-                    </div>
-                </Link>
-                <div className='menu block md:w-auto' id='navbar'>
-                    <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0'>
-                        {/*<NavLink href = {link.path} title={link.title}/>*/}
-                        <NavAnchor href={"/#about"} title={"About"}/>
-                        <NavLink href={"/projects"} title={"Projects"}/>
-                        <NavLink href={"/contact"} title={"Contact"}/>
-                    </ul>
+                        Brian Wang
+                    </Link>
+                    {/* Close button for mobile */}
+                    <button
+                        className="text-white text-2xl"
+                        onClick={() => setSidebarOpen(false)}
+                        aria-label="Close sidebar"
+                    >
+                        &times;
+                    </button>
                 </div>
-            </div>
-        </nav>
+                <ul className="flex flex-col space-y-10 px-6 mt-20">
+                    <NavLink href={"/"} title={"Home"} onClick={() => setSidebarOpen(false)} />
+                    <NavAnchor href={"/#about"} title={"About"} onClick={() => setSidebarOpen(false)} />
+                    <NavLink href={"/projects"} title={"Projects"} onClick={() => setSidebarOpen(false)} />
+                    <NavLink href={"/contact"} title={"Contact"} onClick={() => setSidebarOpen(false)} />
+                </ul>
+            </aside>
+        </>
     )
 }
 
