@@ -8,6 +8,7 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "/app/hooks/use-outside-click.jsx";
+import { InfiniteMovingCards } from "/app/ui/moving-cards.jsx";
 
 const content = [
     {
@@ -61,7 +62,7 @@ const content = [
 const cards = [
     {
         description: "Advanced Combat AI",
-        title: "Luau",
+        title: "LuaU",
         src: "/images/tiktok_ai.png",
         ctaText: "View",
         ctaLink: "https://www.tiktok.com/@togahttps/video/7399158853872520478",
@@ -104,6 +105,33 @@ const cards = [
     },
 ];
 
+const organizations = [
+    {
+        quote:
+            "I lead the CS team in the back-end department, from creating Doctor Portals (patient data) to filming and editing video documentation. We are recognized by Bourns Engineering and receive grants from them.",
+        name: "VMM",
+        title: "Virtual Medical Missions",
+        href: "https://www.vmmhealthcare.org/",
+        icon: "VMM.jpg"
+    },
+    {
+        quote:
+            "I led a partnership for FBLA with Nektar Juice Bar and held workshops wtih a committee of 32 members, and coordinated with guest speakers from Nektar Juice Bar to speak to the youth about entrepreneurship.",
+        name: "FBLA",
+        title: "Future Business Leaders of America",
+        href: "https://www.fbla.org/",
+        icon: "fbla.png"
+    },
+    {
+        quote:
+            "I led a team of 10+ developers to create a game called Project Agile, which has over 60,000 views on YouTube. I also led the team in creating a game called Project Agile Studios, which is a game development studio.",
+        name: "P.A.S.",
+        title: "Project Agile Studios",
+        href: "https://discord.com/invite/UVjqd99xRe",
+        icon: "project_agile.png"
+    },
+];
+
 const projects = () => {
 
     const [active, setActive] = useState(null);
@@ -132,71 +160,59 @@ const projects = () => {
     return (
         <div className="select-none flex flex-col items-center justify-center min-h-screen px-4 py-0">
 
-            <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
+            <ContainerScroll
+                titleComponent={
+                    <>
+                        <h1 className="text-4xl font-semibold text-white md:mb-10 lg:mb-20">
+                            Project Agile <br />
+                            <span className="text-4xl font-bold mt-1 leading-none">
+                                <TypeAnimation
+                                    sequence={[
+                                        '60k Views',
+                                        2500,
+                                        '200+ Community Members',
+                                        2500,
+                                        '10k+ Lines of Code',
+                                        2500,
+                                        '200+ Hours of Work',
+                                        2500,
+                                        '10+ Team Members',
+                                        2500,
+                                    ]}
+                                    wrapper="span"
+                                    speed={20}
+                                    className='text-white inline-block text-5xl'
+                                    repeat={Infinity}
+                                />
+                            </span>
+                        </h1>
+                    </>
+                }
             >
-                <ContainerScroll
-                    titleComponent={
-                        <>
-                            <h1 className="text-4xl font-semibold text-white md:mb-10 lg:mb-20">
-                                Project Agile <br />
-                                <span className="text-4xl font-bold mt-1 leading-none">
-                                    <TypeAnimation
-                                        sequence={[
-                                            '60k Views',
-                                            2500,
-                                            '200+ Community Members',
-                                            2500,
-                                            '10k+ Lines of Code',
-                                            2500,
-                                            '200+ Hours of Work',
-                                            2500,
-                                            '10+ Team Members',
-                                            2500,
-                                        ]}
-                                        wrapper="span"
-                                        speed={20}
-                                        className='text-white inline-block text-5xl'
-                                        repeat={Infinity}
-                                    />
-                                </span>
-                            </h1>
-                        </>
-                    }
-                >
 
-                    <Link href={"https://www.youtube.com/@haroharper"}
-                        className="block mt-6 py-2 pl-3 pr-4 text-white text-lg font-semibold hover:text-[#E7EFC7] hover:bg-[#697963] rounded transition-colors duration-300 ease-in-out mx-auto" target="_blank" rel="noopener noreferrer">
-                        <img
-                            src={`/images/yt_vid.jpg`}
-                            alt="hero"
-                            height={500}
-                            width={700}
-                            className="mx-auto rounded-2xl object-cover h-full object-left-top"
-                            draggable={false}
-                        />
-                        <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 pr-5 mr-2 text-center'>
-                            Project Agile is a game set in the dystopian future with much technological advances. The main character, luckily enough, was only a test subject, resulting in a cyborg-human mix. I wonder, what is in stored for you.....?
-                        </p>
-                    </Link>
-                </ContainerScroll>
-            </motion.div>
+                <Link href={"https://www.youtube.com/@haroharper"}
+                    className="block mt-6 py-2 pl-3 pr-4 text-white text-lg font-semibold hover:text-[#E7EFC7] hover:bg-[#697963] rounded transition-colors duration-300 ease-in-out mx-auto" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src={`/images/yt_vid.jpg`}
+                        alt="hero"
+                        height={500}
+                        width={700}
+                        className="mx-auto rounded-2xl object-cover h-full object-left-top"
+                        draggable={false}
+                    />
+                    <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 text-center'>
+                        Project Agile is a game set in the dystopian future with much technological advances. The main character, luckily enough, was only a test subject, resulting in a cyborg-human mix. I wonder, what is in stored for you.....?
+                    </p>
+                </Link>
+            </ContainerScroll>
 
 
-            <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-            >
-                <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
-                    <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
-                        Roblox Studio Projects
-                    </h1>
-                    <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-                </div>
-            </motion.div>
+            <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
+                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+                    Roblox Studio Projects
+                </h1>
+                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+            </div>
 
             <AnimatePresence>
                 {active && typeof active === "object" && (
@@ -322,19 +338,12 @@ const projects = () => {
             </ul>
 
 
-            <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-            >
-                <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
-                    <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
-                        Programming Projects
-                    </h1>
-                    <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-                </div>
-            </motion.div>
+            <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
+                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+                    Programming Projects
+                </h1>
+                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+            </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
                 <WobbleCard
@@ -372,7 +381,7 @@ const projects = () => {
                         width={300}
                         height={300}
                         alt="linear demo image"
-                        className="absolute -right-4 lg:-right-[10%] grayscale filter -bottom-10  rounded-3xl lg:rounded-4xl w-80 h-60 lg:w-[500px] lg:h-[350px]"
+                        className="absolute -right-4 lg:-right-[10%] grayscale filter -bottom-10  rounded-3xl lg:rounded-4xl w-50 h-40 sm:w-80 sm:h-60 lg:w-[500px] lg:h-[350px]"
                     />
                 </WobbleCard>
                 <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-green-800">
@@ -415,7 +424,7 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 w-60 h-60 object-cover"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
                     />
                     <div className="flex flex-row">
                         <Image
@@ -450,7 +459,7 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-20 lg:-right-[20%] -bottom-10 rounded-2xl lg:w-70 lg:h-70 w-60 h-60 object-cover"
+                        className="grayscale filter absolute -right-20 lg:-right-[20%] -bottom-10 rounded-2xl lg:w-70 lg:h-70 sm:w-60 sm:h-60 w-50 h-50 object-cover"
                     />
                     <div className="flex flex-row">
                         <Image
@@ -485,7 +494,7 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-20 lg:-right-[5%] lg:-bottom-[5%] -bottom-20 rounded-2xl lg:w-50 lg:h-50 w-60 h-60 object-cover"
+                        className="grayscale filter absolute -right-20 lg:-right-[5%] lg:-bottom-[5%] -bottom-20 rounded-2xl lg:w-50 lg:h-50 sm:w-60 sm:h-60 w-50 h-45 object-cover"
                     />
                     <div className="flex flex-row">
                         <Image
@@ -520,7 +529,7 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-5 lg:-right-[5%] lg:-bottom-[5%] -bottom-10 rounded-2xl lg:w-50 lg:h-50 w-45 h-45 object-cover"
+                        className="grayscale filter absolute -right-5 lg:-right-[5%] lg:-bottom-[5%] -bottom-10 rounded-2xl lg:w-50 lg:h-50 sm:w-45 sm:h-45 w-35 h-35 object-cover"
                     />
                     <div className="flex flex-row">
                         <Image
@@ -545,6 +554,22 @@ const projects = () => {
                 <br />
                 <br />
             </div>
+
+            <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
+                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+                    Partnered Organizations
+                </h1>
+                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+            </div>
+            <section id="organizations">
+                <InfiniteMovingCards
+                    items={organizations}
+                    direction="right"
+                    speed="medium"
+                    className="mt-0 mb-50 lg:mb-100 w-full h-full"
+                >
+                </InfiniteMovingCards>
+            </section>
         </div >
     );
 }

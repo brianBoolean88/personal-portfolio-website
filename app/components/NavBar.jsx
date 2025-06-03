@@ -10,7 +10,7 @@ const NavBar = () => {
         <>
             {/* Hamburger Button */}
             <button
-                className="fixed top-6 left-6 z-20 flex flex-col justify-center items-center w-10 h-10 bg-[#222] rounded-md"
+                className="fixed top-6 left-6 z-80 flex flex-col justify-center items-center w-10 h-10 bg-[#222] rounded-md"
                 onClick={() => setSidebarOpen(true)}
                 aria-label="Open sidebar"
             >
@@ -32,7 +32,7 @@ const NavBar = () => {
                     ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
             >
                 <div className="flex items-center justify-between p-6">
-                    <Link href={"/"} className='text-3xl text-white font-semibold flex items-center'>
+                    <Link href={"/"} onClick={() => setSidebarOpen(false)} className='text-3xl text-white font-semibold flex items-center'>
                         <Image
                             src="/images/nav_img.png"
                             alt="Logo"

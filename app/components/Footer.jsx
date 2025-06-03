@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <div className="w-full bg-[#23281a] pt-16 px-3 pb-10">
+        <div className="w-full bg-[#253629] pt-16 px-3 pb-10">
             <div className="grid gap-16 row-gap-10 mb-5 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
                     <a
@@ -242,7 +242,7 @@ export const Footer = () => {
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                     >
                         <Image
-                            src={`/images/SVG/github2.svg`}
+                            src={`/images/SVG/github1.svg`}
                             alt={'LINK'}
                             width={25}
                             height={25}
@@ -256,7 +256,7 @@ export const Footer = () => {
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                     >
                         <Image
-                            src={`/images/SVG/github1.svg`}
+                            src={`/images/SVG/github2.svg`}
                             alt={'LINK'}
                             width={25}
                             height={25}

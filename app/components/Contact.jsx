@@ -112,12 +112,12 @@ const Contact = () => {
             <AnimatedTestimonials contact={contactMethods} />
 
             <div
-                className="shadow-input mx-auto w-full lg:w-[800px] rounded-none bg-transparent p-4 md:rounded-2xl md:p-8 mt-20">
+                className="mx-auto w-full lg:w-[800px] rounded-none bg-transparent p-4 md:rounded-2xl md:p-8 mt-20">
                 <h2 className="text-3xl font-bold text-white ">
                     Contact Form
                 </h2>
                 <p className="mt-2 max-w-sm text-sm text-neutral-400">
-                    If there is no ReCAPTCHA, please reload the page or disable your adblocker. If you are still having issues, please contact me through my social media links below. You cannot send a message without completing the ReCAPTCHA.
+                    If there is no ReCAPTCHA, please reload the page or disable your adblocker. If you are still having issues, please contact me through my social media links above. You cannot send a message without completing the ReCAPTCHA.
                 </p>
                 <form className="my-8" onSubmit={handleSubmit}>
                     <div
@@ -149,12 +149,12 @@ const Contact = () => {
                     <ReCAPTCHA
                         sitekey={SITE_KEY}
                         ref={recaptchaRef}
-                        className="mb-4"
+                        className="ml-3 mb-4 mx-auto"
                         onChange={setCaptchaToken}
                     />
 
                     <button
-                        className="group/btn relative block h-10 w-full rounded-md bg-[#8A784E] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+                        className="group/btn relative block h-10 w-full rounded-md bg-[#44624a] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
                         type="submit">
                         Send Message
                         <BottomGradient />
