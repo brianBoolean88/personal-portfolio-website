@@ -165,7 +165,7 @@ const projects = () => {
                     <>
                         <h1 className="text-4xl font-semibold text-white md:mb-10 lg:mb-20">
                             Project Agile <br />
-                            <span className="text-4xl font-bold mt-1 leading-none">
+                            <span className="text-4xl font-bold mt-1 leading-none block min-h-[150px] lg:min-h-[0px]">
                                 <TypeAnimation
                                     sequence={[
                                         '60k Views',

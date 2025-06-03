@@ -110,33 +110,38 @@ const HeroSection = () => {
                     {/* Left side */}
                     <div className='mb-10 sm:mb-25 col-span-7 place-self-center text-center lg:text-left'>
                         <h1 className="select-none text-white mb-4 text-4xl lg:text-5xl font-extrabold">
-                            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#E7EFC7] to-[#AEC8A4]'>
+                            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#E7EFC7] to-[#AEC8A4] inline'>
                                 Hello, I'm
                             </span>
                             <br></br>
-                            <TypeAnimation
-                                sequence={[
-                                    'Brian',
-                                    2500,
-                                    'a Game Developer',
-                                    2500,
-                                    'a Simulation Engineer',
-                                    2500,
-                                    'a Full Stack Developer',
-                                    2500,
-                                    'a Web & Mobile Developer',
-                                    2500,
-                                    'a Backend Engineer',
-                                    2500,
-                                    'a AI Engineer',
-                                    2500,
-                                    'a Graphics Designer'
-                                ]}
-                                wrapper="span"
-                                speed={20}
-                                className='text-white inline-block text-5xl'
-                                repeat={Infinity}
-                            />
+                            <span
+                                className="block min-h-[150px] lg:min-h-[0px]"
+                            >
+                                <TypeAnimation
+                                    sequence={[
+                                        'Brian',
+                                        2500,
+                                        'a Game Developer',
+                                        2500,
+                                        'a Simulation Engineer',
+                                        2500,
+                                        'a Full Stack Developer',
+                                        2500,
+                                        
+                                        2500,
+                                        'a Backend Engineer',
+                                        2500,
+                                        'a AI Engineer',
+                                        2500,
+                                        'a Graphics Designer',
+                                        2500,
+                                    ]}
+                                    wrapper="span"
+                                    speed={20}
+                                    className='text-white text-5xl'
+                                    repeat={Infinity}
+                                />
+                            </span>
                         </h1>
                         <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 pr-5 mr-2'>
                             Hello, I’m Brian (“Harper” online), a developer skilled in games, simulations, full stack, web/mobile apps, backend, AI, and graphics. I build engaging, innovative digital solutions.
