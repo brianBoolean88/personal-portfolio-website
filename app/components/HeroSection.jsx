@@ -127,7 +127,7 @@ const HeroSection = () => {
                                         2500,
                                         'a Full Stack Developer',
                                         2500,
-                                        
+
                                         2500,
                                         'a Backend Engineer',
                                         2500,
@@ -305,17 +305,21 @@ const HeroSection = () => {
                     <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40 z-1"></div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-8">
                         {[
-                            { name: "Bootstrap HTML", icon: "bootstrap.svg" },
-                            { name: "Tailwind CSS", icon: "tailwindcss.svg" },
-                            { name: "PostgreSQL", icon: "postgresql.svg" },
-                            { name: "Java", icon: "java.svg" },
-                            { name: "C++", icon: "cplusplus.svg" },
-                            { name: "Python", icon: "python.svg" },
-                            { name: "LuaU", icon: "lua.svg" },
-                            { name: "JSX", icon: "react.svg" },
-                            { name: "Dart", icon: "dart.svg", className: " col-span-2 md:col-span-1" },
+                            { name: "Bootstrap HTML", icon: "bootstrap.svg", href: "https://getbootstrap.com/" },
+                            { name: "Tailwind CSS", icon: "tailwindcss.svg", href: "https://tailwindcss.com/" },
+                            { name: "PostgreSQL", icon: "postgresql.svg", href: "https://www.postgresql.org/" },
+                            { name: "Java", icon: "java.svg", href: "https://www.java.com/en/" },
+                            { name: "C++", icon: "cplusplus.svg", href: "https://cplusplus.com/" },
+                            { name: "Python", icon: "python.svg", href: "https://www.python.org/" },
+                            { name: "LuaU", icon: "lua.svg", href: "https://luau.org/" },
+                            { name: "JSX", icon: "react.svg", href: "https://react.dev/" },
+                            { name: "Dart", icon: "dart.svg", href: "https://flutter.dev/", className: " col-span-2 md:col-span-1" },
                         ].map(skill => (
-                            <div key={skill.name} className={"bg-[#44624a] rounded-xl p-6 flex flex-col items-center shadow-md hover:scale-105 transition-transform z-1" + (skill.className || "")}>
+                            <a
+                                key={skill.name}
+                                className={"bg-[#44624a] rounded-xl p-6 flex flex-col items-center shadow-md hover:scale-105 transition-transform z-80" + (skill.className || "")}
+                                href={skill.href}
+                            >
                                 <Image
                                     src={`/images/SVG/${skill.icon}`}
                                     alt={skill.name}
@@ -324,7 +328,7 @@ const HeroSection = () => {
                                     className="mb-4 filter invert brightness-0 w-12 h-12 lg:w-16 lg:h-16 object-cover"
                                 />
                                 <span className="text-white font-semibold text-lg break-words text-center">{skill.name}</span>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
