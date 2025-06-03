@@ -319,6 +319,9 @@ const HeroSection = () => {
                                 key={skill.name}
                                 className={"bg-[#44624a] rounded-xl p-6 flex flex-col items-center shadow-md hover:scale-105 transition-transform z-80" + (skill.className || "")}
                                 href={skill.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                
                             >
                                 <Image
                                     src={`/images/SVG/${skill.icon}`}
