@@ -444,7 +444,40 @@ const projects = () => {
                         </a>
                     </div>
                 </WobbleCard>
-
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-amber-900 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            NaviGaze
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            Navigaze — a Python-based assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.CNUSDSecure was a group project made in Flutter using Dart that focused on centralizing my school's information and grade database into one convenient app. In addition to individual information, it also provides district-wide news & gives users an easy way to search for teachers in the district.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/navigaze.jpg"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=8wJqRSfJBn0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-amber-600 hover:text-white-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </WobbleCard>
                 <WobbleCard containerClassName="col-span-1 lg:col-span-1 bg-blue-600 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">

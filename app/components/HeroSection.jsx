@@ -172,7 +172,7 @@ const HeroSection = () => {
                             <CardBody className="">
                                 <CardItem
                                     translateZ="50"
-                                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                                    className="text-xl font-bold text-neutral-600"
                                 >
                                     <div className='rounded-full bg-gradient-to-br from-[#AEC8A4] via-[#bbc8a4] to-[#3B3B1A] w-[325px] h-[325px] sm:w-[375px] sm:h-[375px] lg:w-[400px] lg:h-[400px] relative'>
                                         <Image
@@ -289,7 +289,7 @@ const HeroSection = () => {
                                 height={300}
                                 className="pointer-events-none relative z-10 h-80 w-80 object-cover"
                             />
-                            <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+                            <h3 className="mt-4 text-center text-2xl font-bold text-neutral-300">
                                 {item.title}
                             </h3>
                         </DraggableCardBody>
@@ -321,7 +321,7 @@ const HeroSection = () => {
                                 href={skill.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                
+
                             >
                                 <Image
                                     src={`/images/SVG/${skill.icon}`}
