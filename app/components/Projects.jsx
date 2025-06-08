@@ -450,7 +450,7 @@ const projects = () => {
                             NaviGaze
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            Navigaze — a Python-based assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.CNUSDSecure was a group project made in Flutter using Dart that focused on centralizing my school's information and grade database into one convenient app. In addition to individual information, it also provides district-wide news & gives users an easy way to search for teachers in the district.
+                            Navigaze — a Python-based assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.
                         </p>
                     </div>
                     <img
