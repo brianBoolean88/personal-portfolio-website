@@ -213,7 +213,7 @@ const HeroSection = () => {
                         >
                             <span className="relative z-10"> UC Berkeley EECS student </span>
                         </PointerHighlight>
-                        passionate about bridging hardware and software. I’ve led teams in robotics, computer science, and cybersecurity competitions, as well as real-world projects that have reached over 60,000 impressions on YouTube. I thrive on collaboration and clear communication, working with others to achieve ambitious goals. Outside of tech, I value balance—prioritizing sleep, fitness, time management, and productivity.
+                        passionate about bridging hardware and software. I’ve led teams in robotics, computer science, and cybersecurity competitions, as well as real-world projects that have reached over 60,000 impressions on YouTube. I thrive on collaboration and clear communication, working with others to achieve ambitious goals. Outside of tech, I value balance-prioritizing sleep, fitness, time management, and productivity.
                     </p>
                 </div>
 

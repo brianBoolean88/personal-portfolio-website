@@ -343,6 +343,7 @@ const projects = () => {
                     Programming Projects
                 </h1>
                 <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+                <span className="text-slate-200">I have lost some repositories due to my old GitHub account being lost. All video records are up. VMM is also an organization project, so I cannot link the GitHub repo. </span>
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -366,12 +367,20 @@ const projects = () => {
                                 className="mb-1 filter invert brightness-0"
                             />
                             <a
-                                href="https://colab.research.google.com/drive/1oefbvuXpcIiTSuoqSOkKT2z94B_c441y?usp=sharing"
+                                href="https://www.youtube.com/watch?v=4OQpZkWD5eo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#E7EFC7] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
                             >
                                 View Project
+                            </a>
+                            <a
+                                href="https://colab.research.google.com/drive/1oefbvuXpcIiTSuoqSOkKT2z94B_c441y?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-[#E7EFC7] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
+                            >
+                                View Google Colab
                             </a>
                         </div>
 
@@ -407,6 +416,14 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            href="https://github.com/88BrianW/ChefLens"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
                     </div>
 
                 </WobbleCard>
@@ -417,7 +434,7 @@ const projects = () => {
                             NaviGaze
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            Navigaze — a Python-based AI assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.
+                            Navigaze - a Python-based AI assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.
                         </p>
                     </div>
                     <img
@@ -443,6 +460,14 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            href="https://github.com/brianBoolean88/navigaze"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
                     </div>
                 </WobbleCard>
 
@@ -452,7 +477,7 @@ const projects = () => {
                             CVision
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            CVision — An AWS fully serverless resume screening app powered by AWS Lambda (Python), S3, DynamoDB and Next.js. Built to impress recruiters with fast, accurate, and scalable resume analysis.
+                            CVision - An AWS fully serverless resume screening app powered by AWS Lambda (Python), S3, DynamoDB and Next.js. Built to impress recruiters with fast, accurate, and scalable resume analysis.
                         </p>
                     </div>
                     <img
@@ -477,6 +502,14 @@ const projects = () => {
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-green-800 hover:text-white-200 transition-colors duration-300 ease-in-out z-20"
                         >
                             View Project
+                        </a>
+                        <a
+                            href="https://github.com/brianBoolean88/cvision"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
                         </a>
                     </div>
                 </WobbleCard>
@@ -513,6 +546,11 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20 bg-slate-500"
+                        >
+                            Can't Link Org GitHub
+                        </a>
                     </div>
                 </WobbleCard>
 
@@ -548,6 +586,14 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            href="https://github.com/88BrianW/FBLA-Mobile-App-2023"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
                     </div>
                 </WobbleCard>
 
@@ -565,7 +611,7 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-20 lg:-right-[5%] lg:-bottom-[5%] -bottom-20 rounded-2xl lg:w-50 lg:h-50 sm:w-60 sm:h-60 w-50 h-45 object-cover"
+                        className="grayscale filter absolute -right-20 lg:-right-[5%] lg:-bottom-[5%] -bottom-20 rounded-2xl lg:w-45 lg:h-45 sm:w-60 sm:h-60 w-50 h-45 object-cover"
                     />
                     <div className="flex flex-row">
                         <Image
@@ -582,6 +628,12 @@ const projects = () => {
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-slate-300 hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
                         >
                             View Project
+                        </a>
+
+                        <a
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20 bg-slate-500"
+                        >
+                            Lost GitHub Account
                         </a>
                     </div>
                 </WobbleCard>
@@ -618,6 +670,14 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            href="https://github.com/88BrianW/Leadership-Legends"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
                     </div>
                 </WobbleCard>
                 <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-800 min-h-[500px] lg:min-h-[600px]">
@@ -652,6 +712,11 @@ const projects = () => {
                         >
                             View Project
                         </a>
+                        <a
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            Lost GitHub Account
+                        </a>
                     </div>
                 </WobbleCard>
                 <br />
@@ -675,6 +740,32 @@ const projects = () => {
                 >
                 </InfiniteMovingCards>
             </section>
+
+            <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
+                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+                    Hardships
+                </h1>
+                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+                <p className="text-slate-200 text-xl">
+                    Every project I've built has come with its own unique set of challenges - technical, personal, and logistical. At one point, I lost access to my GitHub account, wiping out years of work. It was a setback that forced me to rebuild, refocus, and push forward. On top of that, I had to rapidly learn new technologies like Flutter, React, and AI libraries with little guidance - all while juggling a full academic schedule and extracurriculars. These experiences tested my resilience, but ultimately made me a faster learner and more adaptive developer.
+                </p>
+                <br />
+                <br />
+                <br />
+                <p className="text-slate-200 text-xl">
+                    Working with Virtual Medical Missions (VMM) was both rewarding and turbulent. At one point, our internal CS team nearly collapsed - only three of us remained. I stepped up not just to build, but to rebuild the team itself. I organized and led workshops to train incoming developers, helping turn a struggling project into a self-sustaining system. Today, VMM has a growing developer pipeline, and I'm proud to have played a key role in its recovery and growth.
+                </p>
+                <br />
+                <br />
+                <br />
+                <p className="text-slate-200 text-xl">
+                    CVision was one of the most technically difficult things I’ve worked on. I had to connect AWS Lambda, S3, and DynamoDB into a single cohesive system - all from scratch. At the same time, I was diving deep into Python libraries (for NaviGaze) for real-time voice recognition and face tracking. Most of it was unfamiliar territory, and the debugging process was relentless. But by the end, I had built a fully functional, hands-free computing interface. It wasn’t easy, but it was incredibly fulfilling to see it come to life.
+                </p>
+
+                <br />
+                <br />
+                <br />
+            </div>
         </div >
     );
 }
