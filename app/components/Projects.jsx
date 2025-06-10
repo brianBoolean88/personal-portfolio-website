@@ -201,7 +201,7 @@ const projects = () => {
                         draggable={false}
                     />
                     <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 text-center'>
-                        Project Agile is a game set in the dystopian future with much technological advances. The main character, luckily enough, was only a test subject, resulting in a cyborg-human mix. I wonder, what is in stored for you.....?
+                        I created Project Agile with Roblox Studio LuaU using 20,000+ lines of code, and it has over 60,000 views on YouTube. At its peak, I led 10+ developers. I utilized Blender for 3D modeling, Adobe After Effects for VFX, Davinci Resolve for video editing, and Roblox Studio for the coding. I was one of the co-founders of Agile Studios along with another developer who currently studies at UCSC.
                     </p>
                 </Link>
             </ContainerScroll>
@@ -487,7 +487,7 @@ const projects = () => {
                             VMM Website & EMR System
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            I utilized PostreSQL, Flask, Bootstrap  HTML for VMM. I worked with the Virtual Medicine Mission (VMM) Healthcare program to create a website & fully integrated, dynamic EMR notes system. VMM is a non-profit organization dedicated to improving healthcare access in underserved communities through the innovative use of telemedicine.
+                            I utilized PostreSQL, Flask, Bootstrap  HTML for VMM EMR System and VMM Website. I worked for the Virtual Medicine Mission (VMM) Healthcare program to create a website & fully integrated, dynamic EMR notes system. Led to Bourns Engineering granting us $10,000 in funding for the program. I also led a team of 5+ developers to create the EMR system.
                         </p>
                     </div>
                     <img
