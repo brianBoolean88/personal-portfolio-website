@@ -410,47 +410,14 @@ const projects = () => {
                     </div>
 
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-800 min-h-[500px] lg:min-h-[600px]">
-                    <div className="max-w-sm">
-                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                            CNUSDSecure
-                        </h2>
-                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            CNUSDSecure was a group project made in Flutter using Dart that focused on centralizing my school's information and grade database into one convenient app. In addition to individual information, it also provides district-wide news & gives users an easy way to search for teachers in the district.
-                        </p>
-                    </div>
-                    <img
-                        src="/images/cnusd_secure.png"
-                        width={200}
-                        height={200}
-                        alt="linear demo image"
-                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
-                    />
-                    <div className="flex flex-row">
-                        <Image
-                            src={`/images/SVG/link.svg`}
-                            alt={'LINK'}
-                            width={25}
-                            height={25}
-                            className="mb-1 filter invert brightness-0"
-                        />
-                        <a
-                            href="https://www.youtube.com/watch?v=r1lhc-zQiww"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-blue-300 hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
-                        >
-                            View Project
-                        </a>
-                    </div>
-                </WobbleCard>
+
                 <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-amber-900 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                             NaviGaze
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            Navigaze — a Python-based assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.
+                            Navigaze — a Python-based AI assistant that lets you control your computer using natural voice commands and your face to control your cursor! This project combines speech recognition, gaze-based cursor control, and automation to create a hands-free user experience.
                         </p>
                     </div>
                     <img
@@ -478,6 +445,77 @@ const projects = () => {
                         </a>
                     </div>
                 </WobbleCard>
+
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-green-600 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            CVision
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            CVision — An AWS fully serverless resume screening app powered by AWS Lambda (Python), S3, DynamoDB and Next.js. Built to impress recruiters with fast, accurate, and scalable resume analysis.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/cvision.jpg"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=AESfn7xKhrA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-green-800 hover:text-white-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </WobbleCard>
+
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-sky-800 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            VMM Website & EMR System
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            I utilized PostreSQL, Flask, Bootstrap  HTML for VMM. I worked with the Virtual Medicine Mission (VMM) Healthcare program to create a website & fully integrated, dynamic EMR notes system. VMM is a non-profit organization dedicated to improving healthcare access in underserved communities through the innovative use of telemedicine.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/vmmCover.jpg"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://linktr.ee/88brianw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-sky-800 hover:text-white-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </WobbleCard>
+
                 <WobbleCard containerClassName="col-span-1 lg:col-span-1 bg-blue-600 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -577,6 +615,40 @@ const projects = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-indigo-400 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-800 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            CNUSDSecure
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            CNUSDSecure was a group project made in Flutter using Dart that focused on centralizing my school's information and grade database into one convenient app. In addition to individual information, it also provides district-wide news & gives users an easy way to search for teachers in the district.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/cnusd_secure.png"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=r1lhc-zQiww"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-blue-300 hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
                         >
                             View Project
                         </a>
