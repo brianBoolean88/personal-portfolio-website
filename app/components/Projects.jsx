@@ -130,7 +130,7 @@ const organizations = [
     },
     {
         quote:
-            "I led a partnership for FBLA with Nektar Juice Bar and held workshops wtih a committee of 32 members, and coordinated with guest speakers from Nektar Juice Bar to speak to the youth about entrepreneurship.",
+            "I led a partnership for FBLA with Nektar Juice Bar and held workshops with a committee of 32 members, and coordinated with guest speakers from Nektar Juice Bar to speak to the youth about entrepreneurship.",
         name: "FBLA",
         title: "Future Business Leaders of America",
         href: "https://www.fbla.org/",
