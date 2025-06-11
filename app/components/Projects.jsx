@@ -346,9 +346,6 @@ const projects = () => {
                 <p className="text-slate-200 text-xl text-center mx-auto mb-10">
                     I have lost some old private repositories due to my old GitHub account being lost. All video records are up. VMM is a proprietary project to the organization, so I cannot link the Repo.
                 </p>
-                <p className="text-slate-200 text-xl text-center mx-auto">
-                    Documentation and Installation instructions are available in the accessible GitHub repositories.
-                </p>
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
