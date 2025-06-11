@@ -343,7 +343,12 @@ const projects = () => {
                     Programming Projects
                 </h1>
                 <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-                <span className="text-slate-200">I have lost some repositories due to my old GitHub account being lost. All video records are up. VMM is also an organization project, so I cannot link the GitHub repo. </span>
+                <p className="text-slate-200 text-xl text-center mx-auto mb-10">
+                    I have lost some old private repositories due to my old GitHub account being lost. All video records are up. VMM is a proprietary project to the organization, so I cannot link the Repo.
+                </p>
+                <p className="text-slate-200 text-xl text-center mx-auto">
+                    CI/CD Pipelines, Documentation, and Installation instructions are available in the GitHub repositories.
+                </p>
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -663,7 +668,7 @@ const projects = () => {
                             className="mb-1 filter invert brightness-0"
                         />
                         <a
-                            href="https://www.youtube.com/watch?v=A7XFvKSs6jQ"
+                            href="https://www.youtube.com/watch?v=UsGhBugBi0Y"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-indigo-400 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"

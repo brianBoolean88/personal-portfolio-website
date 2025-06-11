@@ -160,7 +160,7 @@ export const Footer = () => {
                                     rel="noopener noreferrer"
                                     className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
-                                    PostreSQL
+                                    PostgreSQL
                                 </a>
                             </li>
                         </ul>
