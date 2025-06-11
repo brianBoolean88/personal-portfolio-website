@@ -544,7 +544,10 @@ const projects = () => {
                             VMM Website & EMR System
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                            I utilized PostreSQL, Flask, Bootstrap  HTML for VMM EMR System and VMM Website. I worked for the Virtual Medicine Mission (VMM) Healthcare program to create a website & fully integrated, dynamic EMR notes system. Led to Bourns Engineering granting us $10,000 in funding for the program. I also led a team of 5+ developers to create the EMR system.
+                            I utilized PostreSQL, Flask, Bootstrap  HTML for VMM EMR System and VMM Website. I worked for the Virtual Medicine Mission (VMM) Healthcare program to create a website & fully integrated, dynamic EMR notes system. Led to Bourns Engineering granting us $10,000 in funding for the program. I also led a team of 5+ developers to create the EMR system. {" "}
+                            <br/>
+                            <br/>
+                            <strong>VMM has proprietary GitHub code that I can not open-source. All products are viewable on the Linktree.</strong>
                         </p>
                     </div>
                     <img
