@@ -69,6 +69,18 @@ const cards = [
         content: () => {
             return (
                 <p>
+                    The following card will send you to a tiktok. However, the game demo is up: {" "} 
+                    <a
+                    
+                        href="https://www.roblox.com/games/116739497133763/Parry-Knights-patch-testing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sky-200 hover:underline"
+                    >
+                        Parry Knights
+                    </a>
+                    <br /> <br />
+
                     Using a centralized loop through a module, I was able to create an AI combat system that allows for a more realistic and engaging combat experience. The AI can adapt to the player's actions, making each encounter unique and challenging. This system is designed to enhance the gameplay by providing dynamic and responsive AI behavior. The AI can analyze the player's movements and strategies, adjusting its tactics accordingly. This results in a more immersive and unpredictable combat experience, keeping players on their toes and engaged throughout the game.
                 </p>
             );
@@ -83,6 +95,8 @@ const cards = [
         content: () => {
             return (
                 <p>
+                    This demo is part of Project Agile, known as Project Agile Workshop.
+                    <br /> <br />
                     I created an advanced combat system using Adobe After Effects, which allows for a more dynamic and engaging combat experience. The system includes various animations and effects that enhance the visual appeal of the combat sequences. By utilizing After Effects, I was able to create smooth transitions and realistic movements, making the combat feel more fluid and responsive. This system is designed to provide players with an immersive and exciting combat experience, keeping them engaged and entertained throughout the game.
                 </p>
             );
@@ -186,6 +200,14 @@ const projects = () => {
                                 />
                             </span>
                         </h1>
+                        <div className="flex justify-center mt-6 mb-20">
+                            <a
+                                href="/projectagile"
+                                className="select-none px-6 py-3 rounded-full bg-[#AEC8A4] hover:bg-[#8A784E] text-white text-lg font-semibold transition-colors duration-300"
+                            >
+                                View Project Agile README
+                            </a>
+                        </div>
                     </>
                 }
             >
@@ -200,8 +222,8 @@ const projects = () => {
                         className="mx-auto rounded-2xl object-cover h-full object-left-top"
                         draggable={false}
                     />
-                    <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 text-center'>
-                        I created Project Agile with Roblox Studio LuaU using 20,000+ lines of code, and it has over 60,000 views on YouTube. At its peak, I led 10+ developers. I utilized Blender for 3D modeling, Adobe After Effects for VFX, Davinci Resolve for video editing, and Roblox Studio for the coding. I was one of the co-founders of Agile Studios along with another developer who currently studies at UCSC.
+                    <p className='select-none text-[#ADB7BE] text-base sm:text-md lg:text-xl mb-6 text-center'>
+                        Watch Project Agile on my YouTube Channel, which has 3 videos that show the development process, the final product, and a behind-the-scenes look at the project.
                     </p>
                 </Link>
             </ContainerScroll>
@@ -419,7 +441,7 @@ const projects = () => {
                             View Project
                         </a>
                         <a
-                            href="https://github.com/88BrianW/ChefLens"
+                            href="https://github.com/brianBoolean88/ChefLens"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
@@ -589,7 +611,7 @@ const projects = () => {
                             View Project
                         </a>
                         <a
-                            href="https://github.com/88BrianW/FBLA-Mobile-App-2023"
+                            href="https://github.com/brianBoolean88/FBLA-Mobile-App-2023"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
@@ -673,7 +695,7 @@ const projects = () => {
                             View Project
                         </a>
                         <a
-                            href="https://github.com/88BrianW/Leadership-Legends"
+                            href="https://github.com/brianBoolean88/Leadership-Legends"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
@@ -737,7 +759,7 @@ const projects = () => {
                 <InfiniteMovingCards
                     items={organizations}
                     direction="right"
-                    speed="medium"
+                    speed="fast"
                     className="mt-0 mb-50 lg:mb-100 w-full h-full"
                 >
                 </InfiniteMovingCards>
