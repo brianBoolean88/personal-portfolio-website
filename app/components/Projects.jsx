@@ -635,7 +635,7 @@ const projects = () => {
                         <a
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20 bg-slate-500"
                         >
-                            Lost GitHub Account
+                            Lost Old Acc's Private Repo
                         </a>
                     </div>
                 </WobbleCard>
@@ -717,7 +717,7 @@ const projects = () => {
                         <a
                             className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
                         >
-                            Lost GitHub Account
+                            Lost Old Acc's Private Repo
                         </a>
                     </div>
                 </WobbleCard>
