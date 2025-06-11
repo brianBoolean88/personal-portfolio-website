@@ -13,8 +13,7 @@ const ProjectAgile = () => {
             <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-2xl mb-12 max-w-4xl text-center'>
                 I created Project Agile with Roblox Studio LuaU using 20,000+ lines of code, and it has over 60,000 views on YouTube.
                 At its peak, I led 10+ developers. I utilized Blender for 3D modeling, Adobe After Effects for VFX, Davinci Resolve for
-                video editing, and Roblox Studio for the coding. I was one of the co-founders of Agile Studios along with another
-                developer who currently studies at UCSC.
+                video editing, and Roblox Studio for the coding. I co-founded Agile Studios with Nikolas, a fellow student at UC Santa Cruz, to develop this game.
             </p>
 
             <div className="max-w-4xl w-full space-y-10 text-lg leading-relaxed">
@@ -54,32 +53,32 @@ const ProjectAgile = () => {
                         <li><a href="https://drive.google.com/drive/folders/1G1gDSjFK7sCQs1bKrtpSnpvYDifL91EK?usp=sharing" className="text-blue-400 underline" target="_blank">Google Drive (Sneak Videos, Below for GIFs)</a></li>
                         <li><a href="https://i.gyazo.com/f43f2dee1ee291e57f6fee134ee407d4.mp4" className="text-blue-400 underline" target="_blank">Early Combat Demo</a></li>
                         <li><a href="https://gyazo.com/45fecd51d52b7aad18701e6b0041a9a9.mp4" className="text-blue-400 underline" target="_blank">Combat Ability Demo</a></li>
-                        
+
                         <li><a href="https://i.gyazo.com/ad6ad446b60ed12b6bf7a03846934a90.mp4" className="text-blue-400 underline" target="_blank">Parkour Raycasting Preview</a></li>
                         <li><a href="https://i.gyazo.com/12232a4b86de1e0b62e015d24743312d.mp4" className="text-blue-400 underline" target="_blank">Gauntlet Launcher Preview</a></li>
                         <li><a href="https://gyazo.com/e11b8d3475774137851740f35206ce5b.mp4" className="text-blue-400 underline" target="_blank">Gauntlet Slingshot Preview</a></li>
-                        
+
                         <li><a href="https://gyazo.com/f834e39bd7527552e7f517d3b6d6d603.mp4" className="text-blue-400 underline" target="_blank">Gauntlet Swinging Preview</a></li>
                         <li><a href="https://i.gyazo.com/fc464cbddf9fa055e81745846168398a.mp4" className="text-blue-400 underline" target="_blank">New Zones</a></li>
                         <li><a href="https://gyazo.com/a499ef8c1a69cc508aae21ef4ded29b9" className="text-blue-400 underline" target="_blank">VFX</a></li>
                         <li><a href="https://gyazo.com/04c2d15aefd8bddfac6598506ff38364" className="text-blue-400 underline" target="_blank">Dashing</a></li>
                         <li><a href="https://gyazo.com/b1f36e7678c0974bc29618c3c13bee00.mp4" className="text-blue-400 underline" target="_blank">City Dialogue</a></li>
                         <li><a href="https://gyazo.com/c388e23e82aee8278ffe720440d588ff" className="text-blue-400 underline" target="_blank">Data Storage</a></li>
-                    
-                    
+
+
                     </ul>
                 </section>
 
                 <section>
                     <h2 className="text-3xl font-semibold mb-4 border-b border-gray-700 pb-2">🧊 Dev Team</h2>
                     <ul className="list-disc list-inside space-y-1">
-                        <li>Scripter – <strong>Brian Wang (haroharper)</strong></li>
-                        <li>Animator – <strong>Nikolas Huang (SnooThe3rd)</strong></li>
-                        <li>Builder – <strong>Caleb Wang (Boilingyousuckhacker)</strong></li>
+                        <li>Scripter – <strong>Brian Wang (haroharper) → UC Berkeley</strong></li>
+                        <li>Animator – <strong>Nikolas Huang (SnooThe3rd) → UC Santa Cruz</strong></li>
+                        <li>Builder – <strong>Caleb Wang (Boilingyousuckhacker) → Biola University </strong></li>
                         <li>Modeler – <strong>0xRust</strong></li>
                         <li>Music – <strong>Banna</strong> & <strong>PotatoOfFreedom</strong></li>
                         <li>Moderator – <strong>Syix</strong> & <strong>FunnTime</strong></li>
-                        <li>Artist Contributor – <strong>Daniel (Yoohala) </strong> & <strong>Rei (want_to_fish)</strong></li>
+                        <li>Artist Contributor – <strong>Daniel (Yoohala) → Grinnell College </strong> & <strong>Rei (want_to_fish) → UC Los Angeles</strong></li>
                     </ul>
                 </section>
 
