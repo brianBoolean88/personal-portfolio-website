@@ -7,7 +7,7 @@ const ProjectAgile = () => {
         <div className="flex flex-col items-center justify-start min-h-screen bg-[#1a1a1a] text-white px-6 py-12">
             <h1 className="text-5xl font-extrabold mb-4 text-center">🅿️ Project Agile</h1>
             <p className="text-center text-2xl mb-8 italic text-[#cbd5e1]">
-                Futuristic Parkour • Adventure • Combat — Built in Roblox Studio using Luau
+                Futuristic Parkour • Adventure • Combat • Built in Roblox Studio using Luau
             </p>
 
             <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-2xl mb-12 max-w-4xl text-center'>
@@ -32,7 +32,7 @@ const ProjectAgile = () => {
                     <h2 className="text-3xl font-semibold mb-4 border-b border-gray-700 pb-2">🎮 Gameplay</h2>
                     <p>
                         Explore a Japanese-inspired, neon-lit cybercity. Play as an escaped prototype cyborg, unravel your identity,
-                        and master parkour, combat, and lore-rich quests — solo or with friends. You are a cyborg with a fragmented memory,
+                        and master parkour, combat, and lore-rich quests - solo or with friends. You are a cyborg with a fragmented memory,
                         on the run from a powerful corporation. Use your advanced parkour skills to traverse the city, engage in fast-paced combat, and uncover the truth about your past.
                     </p>
                 </section>

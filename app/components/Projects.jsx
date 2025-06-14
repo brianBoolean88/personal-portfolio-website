@@ -108,7 +108,7 @@ const cards = [
         title: "YouTube",
         src: "/images/teaching_code.jpg",
         ctaText: "View",
-        ctaLink: "https://youtu.be/_Ir0PtPjmKY",
+        ctaLink: "https://www.youtube.com/watch?v=gRWdpGOm1F4&list=PLWR5mmm7fgkZfMnXMDEsdDMWEEVtMZ_oh",
         content: () => {
             return (
                 <p>
