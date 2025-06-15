@@ -158,7 +158,7 @@ const HeroSection = () => {
                                 Hire Me
                             </a>
                             <a
-                                href="/files/Brian_Wang_Resume.pdf"
+                                href="/files/Brian Wang's_Resume.pdf"
                                 download
                                 className='select-none px-6 py-3 w-full lg:w-fit rounded-full mr-4 bg-transparent hover:bg-[#AEC8A4] text-white border border-white mt-4 text-xl inline-block text-center'
                                 aria-label='Download my resume.'
