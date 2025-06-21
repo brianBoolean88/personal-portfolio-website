@@ -394,7 +394,7 @@ const projects = () => {
                                 href="https://www.youtube.com/watch?v=4OQpZkWD5eo"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#E7EFC7] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#6c7258] hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
                             >
                                 View Project
                             </a>
@@ -402,7 +402,7 @@ const projects = () => {
                                 href="https://colab.research.google.com/drive/1oefbvuXpcIiTSuoqSOkKT2z94B_c441y?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-[#E7EFC7] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-[#747963] hover:text-slate-900 transition-colors duration-300 ease-in-out z-20"
                             >
                                 View Google Colab
                             </a>
@@ -436,7 +436,7 @@ const projects = () => {
                             href="https://www.youtube.com/watch?v=kgIj3C8w2TI"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#8A784E] hover:text-slate-300 transition-colors duration-300 ease-in-out z-20"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#4e8a51] hover:text-slate-300 transition-colors duration-300 ease-in-out z-20"
                         >
                             View Project
                         </a>
@@ -450,6 +450,49 @@ const projects = () => {
                         </a>
                     </div>
 
+                </WobbleCard>
+
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-violet-500 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            EmpathAI
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            EmpathAI - a fine-tuned AI model trained on datasets to provide therapeutic relief to those going through tough times. The AI Models utilizes PyTorch, CUDA, Flash Attention 2, Python as the backend with Uvicorn, NextJS as the front end, Fast API, and Huggingface to port AI models.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/empathai.jpg"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=vWC76822Zvo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-violet-700 hover:text-white-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                        <a
+                            href="https://github.com/brianBoolean88/empathai"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
+                    </div>
                 </WobbleCard>
 
                 <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-amber-900 min-h-[500px] lg:min-h-[600px]">
