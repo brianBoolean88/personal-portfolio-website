@@ -19,7 +19,6 @@ const NavBar = () => {
             </Link>
             <ul className="flex flex-row space-x-2 lg:space-x-10 ml-auto">
                 <NavLink href={"/"} title={"Home"} />
-                <NavAnchor href={"/#about"} title={"About"} />
                 <NavLink href={"/projects"} title={"Projects"} />
                 <NavLink href={"/contact"} title={"Contact"} />
             </ul>
