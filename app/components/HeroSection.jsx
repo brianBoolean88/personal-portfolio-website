@@ -144,7 +144,7 @@ const HeroSection = () => {
                             </span>
                         </h1>
                         <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 pr-5 mr-2'>
-                            Hello, I’m Brian (“Harper” online), a developer skilled in games, simulations, full stack, web/mobile apps, backend, AI, and graphics. I build engaging, innovative digital solutions.
+                            Hello, I’m Brian, a developer skilled in games, simulations, full stack, web/mobile apps, backend, AI, and graphics. I build engaging, innovative digital solutions.
                         </p>
                         <p className='select-none text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 pr-5 mr-2'>
                             I have 6+ years of experience in programming both front-end and back-end, 4+ years of experience in game development, and 2+ years of experience in utilizing API/Library/Framework services such as AI, AWS, Mediapipe, NextJS, and more.
