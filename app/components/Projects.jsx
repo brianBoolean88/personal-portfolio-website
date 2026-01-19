@@ -104,15 +104,15 @@ const cards = [
     },
 
     {
-        description: "Teaching How to Code in Luau",
+        description: "Making Roblox Studio Content",
         title: "YouTube",
-        src: "/images/teaching_code.jpg",
+        src: "/images/parkourYT.jpg",
         ctaText: "View",
-        ctaLink: "https://www.youtube.com/watch?v=gRWdpGOm1F4&list=PLWR5mmm7fgkZfMnXMDEsdDMWEEVtMZ_oh",
+        ctaLink: "https://www.youtube.com/watch?v=vhpAcaUTmPI",
         content: () => {
             return (
                 <p>
-                    I teach how to code in Luau, the programming language used in Roblox, through my YouTube channel. My videos cover a wide range of topics, from beginner-friendly tutorials to advanced coding techniques. I aim to make learning Luau accessible and enjoyable for everyone, regardless of their prior programming experience. <br /> <br />By breaking down complex concepts into easy-to-understand lessons, I help aspiring developers build their skills and create amazing games on the Roblox platform.
+                    I made a parkour game in Roblox Studio and showcased it in this video. I have since started making YouTube videos teaching people how to code in Roblox Studio through youtube shorts, covering topics such as Lua scripting, game design, and building techniques. My goal is to help others learn and improve their skills in game development using Roblox Studio.
                 </p>
             );
         },
@@ -212,7 +212,7 @@ const projects = () => {
                 }
             >
 
-                <Link href={"https://www.youtube.com/@haroharper"}
+                <Link href={"https://www.youtube.com/@harplume"}
                     className="block mt-6 py-2 pl-3 pr-4 text-white text-lg font-semibold hover:text-[#E7EFC7] hover:bg-[#697963] rounded transition-colors duration-300 ease-in-out mx-auto" target="_blank" rel="noopener noreferrer">
                     <img
                         src={`/images/yt_vid.jpg`}
@@ -371,6 +371,26 @@ const projects = () => {
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            MobileCybench
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            MobileCybench - a Research project that I collaborated on with 30+ other researchers to create a mobile cybersecurity benchmark that tests a LLM's ability to detect vulnerabilities in mobile applications.
+
+                            Researched and implemented app source building, metadata debugging, APK uninstallation in Git Workflow CI, Creating Git Commit Onerror & Test files, synthetic vulnerabilities.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/mobilecybench.png"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                </WobbleCard>
+                
                 <WobbleCard
                     containerClassName="col-span-1 lg:col-span-2 h-full bg-[#8A784E] min-h-[500px] lg:min-h-[300px]"
                     className=""

@@ -230,8 +230,14 @@ const HeroSection = () => {
                     <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
                     <div className='mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12 gap-x-40 lg:gap-x-60 justify-center items-center'>
                         <ThreeDPin
-                            title={"3D Game Development Teacher Intern"}
-                            description={"Taught 3D game development to high school students at Coding Stem Academy, covering Unity, C#, and game design principles. Created engaging lesson plans and hands-on projects."}
+                            title={"MobileCybench Research Intern"}
+                            description={"Researched and implemented app source building, metadata debugging, APK uninstallation in Git Workflow CI, Creating Git Commit Onerror & Test files, synthetic vulnerabilities. There is no link unfortunately, as it is a private repo."}
+                            img={"/images/mobilecybench.png"}
+                            href={""}
+                        />
+                        <ThreeDPin
+                            title={"3D Engineering Teacher Intern"}
+                            description={"I worked with this institution. Taught 3D Design (Robotics, Unity) to high school students at Coding Stem Academy over summer, covering Unity, C#, and game design principles. Created engaging lesson plans and hands-on projects."}
                             img={"/images/coding_stem_academy.jpg"}
                             href={"http://codingstemacademy.com/"}
                             className="mx-auto"
@@ -241,12 +247,6 @@ const HeroSection = () => {
                             description={"Led a team of CS interns at VMM, developing web-based applications such as the EMR System, Patient Portal, and Telemedicine System. Utilized HTML, CSS, JS, Quart/Flask Python, SQL."}
                             img={"/images/VMM.jpg"}
                             href={"https://www.vmmhealthcare.org/"}
-                        />
-                        <ThreeDPin
-                            title={"Encryption Algorithm Researcher"}
-                            description={"Researched and implemented encryption algorithms for secure data transmission. Developed a custom encryption protocol using Python Flask, enhancing data security for applications."}
-                            img={"/images/ficrypt_logo.png"}
-                            href={"https://www.youtube.com/watch?v=issbem_ClSA&t"}
                         />
                     </div>
                 </div>
@@ -261,7 +261,7 @@ const HeroSection = () => {
                     <div className="grid grid-cols-1 gap-10 mt-12">
                         <Testimonial
                             name="Scott, Usher"
-                            position="AP CSA Teacher, eSTEM Academy"
+                            position="eSTEM Academy"
                             image="/images/test_2.jpg"
                             quote="Brian is attentive, on task, well-organized, and one step ahead. He is an effective communicator in collaborative activities. He learned Java and JavaScript in the classroom, but self-taught other programming languages and explored various Integrated Development Environment IDEs that he used to develop projects for academic competitive events."
                         />
