@@ -107,7 +107,7 @@ export const AnimatedTestimonials = ({
               href={contact[active].href}
               target="_blank"
               rel="noopener noreferrer"
-              className='select-none z-20 mt-5 px-6 py-3 w-fit rounded-full mr-4 bg-gradient-to-br from-[#E7EFC7] via-[#AEC8A4] to-[#8A784E] hover:bg-transparent text-white text-xl inline-block text-center'
+              className='select-none z-20 mt-5 px-6 py-3 w-fit rounded-full mr-4 bg-gradient-to-br from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] hover:bg-transparent text-white text-xl inline-block text-center'
               aria-label='View contact details'
             >
               View

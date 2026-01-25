@@ -44,9 +44,9 @@ const BottomGradient = () => {
     return (
         <>
             <span
-                className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-[#AEC8A4] to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
+                className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-[#8dd1ff] to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
             <span
-                className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-[#AEC8A4] to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
+                className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-[#8dd1ff] to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
         </>
     );
 };
@@ -138,12 +138,12 @@ const Contact = () => {
 
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="subject">Subject</Label>
-                        <Input id="subject" placeholder="Hiring Position" type="text" />
+                        <Input id="subject" placeholder="Catching Up" type="text" />
                     </LabelInputContainer>
 
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="message">Message</Label>
-                        <Input id="message" placeholder="Hi! I would love to discuss about hiring you!" type="textarea" />
+                        <Input id="message" placeholder="What's up man?" type="textarea" />
                     </LabelInputContainer>
 
                     <ReCAPTCHA
@@ -154,7 +154,7 @@ const Contact = () => {
                     />
 
                     <button
-                        className="group/btn relative block h-10 w-full rounded-md bg-[#44624a] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+                        className="group/btn relative block h-10 w-full rounded-md bg-[#2e3b4e] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
                         type="submit">
                         Send Message
                         <BottomGradient />

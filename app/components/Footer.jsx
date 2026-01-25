@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Footer = () => {
     return (
-        <div className="w-full bg-[#253629] pt-16 px-3 pb-10">
+        <div className="w-full bg-[#2e3b4e] pt-16 px-3 pb-10">
             <div className="grid gap-16 row-gap-10 mb-5 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
                     <a
@@ -12,11 +12,11 @@ export const Footer = () => {
                         className="inline-flex items-center"
                     >
                         <Image
-                            src="/images/hero_img.png"
+                            src="/images/footer_imgv2.png"
                             alt="Hero Image"
-                            className=''
                             width={50}
                             height={50}
+                            className ="rounded-4xl"
                         />
                         <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                             BRIAN WANG
@@ -40,7 +40,7 @@ export const Footer = () => {
                             <li>
                                 <a
                                     href="/#about"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     About
                                 </a>
@@ -48,7 +48,7 @@ export const Footer = () => {
                             <li>
                                 <a
                                     href="/projects"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Projects
                                 </a>
@@ -56,7 +56,7 @@ export const Footer = () => {
                             <li>
                                 <a
                                     href="/contact"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Contact
                                 </a>
@@ -73,7 +73,7 @@ export const Footer = () => {
                                     href="https://www.youtube.com/watch?v=9tTtR3KgL6A&t"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Project Agile Devlog 0
                                 </a>
@@ -83,7 +83,7 @@ export const Footer = () => {
                                     href="https://drive.google.com/file/d/1-ky1dN1JSqNPBXM306B4XdPFnr9m8Je5/view"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Advanced Combat System
                                 </a>
@@ -93,7 +93,7 @@ export const Footer = () => {
                                     href="https://www.tiktok.com/@togahttps/video/7399158853872520478"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Advanced AI Combat Systems
                                 </a>
@@ -103,7 +103,7 @@ export const Footer = () => {
                                     href="https://nightmoondev.carrd.co/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Roblox Commission Portfolio
                                 </a>
@@ -118,7 +118,7 @@ export const Footer = () => {
                                     href="https://cplusplus.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     C++
                                 </a>
@@ -128,7 +128,7 @@ export const Footer = () => {
                                     href="https://nextjs.org/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     NextJS
                                 </a>
@@ -138,7 +138,7 @@ export const Footer = () => {
                                     href="https://flutter.dev/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Flutter
                                 </a>
@@ -148,7 +148,7 @@ export const Footer = () => {
                                     href="https://flask.palletsprojects.com/en/stable/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     Flask/Python
                                 </a>
@@ -158,7 +158,7 @@ export const Footer = () => {
                                     href="https://www.postgresql.org/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     PostgreSQL
                                 </a>
@@ -173,7 +173,7 @@ export const Footer = () => {
                                     href="https://estem.cnusd.k12.ca.us/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     eSTEM Academy
                                 </a>
@@ -183,7 +183,7 @@ export const Footer = () => {
                                     href="https://roosevelt.cnusd.k12.ca.us/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     ERHS
                                 </a>
@@ -193,7 +193,7 @@ export const Footer = () => {
                                     href="https://www.berkeley.edu/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#7f9178] transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                    className="text-[#8dd1ff] transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 >
                                     UC Berkeley
                                 </a>

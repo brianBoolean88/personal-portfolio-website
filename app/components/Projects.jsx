@@ -9,6 +9,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "/app/hooks/use-outside-click.jsx";
 import { InfiniteMovingCards } from "/app/ui/moving-cards.jsx";
+import YouTubeShowcase from "./YouTubeShowcase";
 
 const content = [
     {
@@ -104,7 +105,7 @@ const cards = [
     },
 
     {
-        description: "Making Roblox Studio Content",
+        description: "Parkour Early Devlog Showcase!",
         title: "YouTube",
         src: "/images/parkourYT.jpg",
         ctaText: "View",
@@ -203,7 +204,7 @@ const projects = () => {
                         <div className="flex justify-center mt-6 mb-20">
                             <a
                                 href="/projectagile"
-                                className="select-none px-6 py-3 rounded-full bg-[#AEC8A4] hover:bg-[#8A784E] text-white text-lg font-semibold transition-colors duration-300"
+                                className="select-none px-6 py-3 rounded-full bg-[#2e3b4e] hover:bg-[#4da6ff] text-white text-lg font-semibold transition-colors duration-300"
                             >
                                 View Project Agile README
                             </a>
@@ -213,7 +214,7 @@ const projects = () => {
             >
 
                 <Link href={"https://www.youtube.com/@harplume"}
-                    className="block mt-6 py-2 pl-3 pr-4 text-white text-lg font-semibold hover:text-[#E7EFC7] hover:bg-[#697963] rounded transition-colors duration-300 ease-in-out mx-auto" target="_blank" rel="noopener noreferrer">
+                    className="block mt-6 py-2 pl-3 pr-4 text-white text-lg font-semibold hover:text-[#E7EFC7] hover:bg-[#2e3b4e] rounded transition-colors duration-300 ease-in-out mx-auto" target="_blank" rel="noopener noreferrer">
                     <img
                         src={`/images/yt_vid.jpg`}
                         alt="hero"
@@ -270,7 +271,7 @@ const projects = () => {
                         <motion.div
                             layoutId={`card-${active.title}-${id}`}
                             ref={ref}
-                            className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#63725d] sm:rounded-3xl overflow-hidden">
+                            className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#2e3b4e] sm:rounded-3xl overflow-hidden">
                             <motion.div layoutId={`image-${active.title}-${id}`}>
                                 <img
                                     width={200}
@@ -299,7 +300,7 @@ const projects = () => {
                                         layoutId={`button-${active.title}-${id}`}
                                         href={active.ctaLink}
                                         target="_blank"
-                                        className="px-4 py-3 text-sm rounded-full font-bold bg-[#AEC8A4] text-white">
+                                        className="px-4 py-3 text-sm rounded-full font-bold bg-[#4da6ff] text-white">
                                         {active.ctaText}
                                     </motion.a>
                                 </div>
@@ -327,7 +328,7 @@ const projects = () => {
                         layoutId={`card-${card.title}-${id}`}
                         key={`card-${card.title}-${id}`}
                         onClick={() => setActive(card)}
-                        className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-[#74866c] rounded-xl cursor-pointer mb-10">
+                        className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-[#2e3b4e] rounded-xl cursor-pointer mb-10">
                         <div className="flex gap-4 flex-col md:flex-row ">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
                                 <img
@@ -359,19 +360,15 @@ const projects = () => {
                 ))}
             </ul>
 
-
             <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
                 <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
                     Programming Projects
                 </h1>
                 <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-                <p className="text-slate-200 text-xl text-center mx-auto mb-10">
-                    I have lost some old private repositories due to my old GitHub account being lost. All video records are up. VMM is a proprietary project to the organization, so I cannot link the Repo.
-                </p>
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
+                <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                             MobileCybench
@@ -387,8 +384,51 @@ const projects = () => {
                         width={200}
                         height={200}
                         alt="linear demo image"
-                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-100 lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                        className="grayscale filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-80 lg:h-80 sm:w-60 sm:h-60 w-50 h-40 object-cover"
                     />
+                </WobbleCard>
+
+                <WobbleCard containerClassName="col-span-1 lg:col-span-1 bg-indigo-600 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            Interdex.ai
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            Built in 30 hours with 3 teammates using the ReactJS + Flask frameworks and Gemini API + Google TTS + Firebase services for persistent voice-based interviews.
+                        </p>
+                    </div>
+                    <img
+                        src="/images/InterdexAI.png"
+                        width={200}
+                        height={200}
+                        alt="linear demo image"
+                        className="filter absolute -right-25 lg:-right-[5%] -bottom-10 rounded-2xl lg:w-80 lg:h-80  sm:w-80 sm:h-80 object-cover"
+                    />
+                    <div className="flex flex-row">
+                        <Image
+                            src={`/images/SVG/link.svg`}
+                            alt={'LINK'}
+                            width={25}
+                            height={25}
+                            className="mb-1 filter invert brightness-0"
+                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=5bhkFBNONM8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#4e8a51] hover:text-slate-300 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View Project
+                        </a>
+                        <a
+                            href="https://github.com/brianBoolean88/interdexAI"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-slate-800 hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                        >
+                            View GitHub Repo
+                        </a>
+                    </div>
                 </WobbleCard>
                 
                 <WobbleCard
@@ -817,6 +857,15 @@ const projects = () => {
 
             <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
                 <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+                    YouTube Creator
+                </h1>
+                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+            </div>
+
+            <YouTubeShowcase></YouTubeShowcase>
+
+            <div className='text-[#8dd1ff] p-8 mt-30 mb-12'>
+                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
                     Partnered Organizations
                 </h1>
                 <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
@@ -830,32 +879,6 @@ const projects = () => {
                 >
                 </InfiniteMovingCards>
             </section>
-
-            <div className='text-[#dde9ae] p-8 mt-30 mb-12'>
-                <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
-                    Hardships
-                </h1>
-                <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-                <p className="text-slate-200 text-xl">
-                    Every project I've built has come with its own unique set of challenges - technical, personal, and logistical. At one point, I lost access to my GitHub account, wiping out years of work. It was a setback that forced me to rebuild, refocus, and push forward. On top of that, I had to rapidly learn new technologies like Flutter, React, and AI libraries with little guidance - all while juggling a full academic schedule and extracurriculars. These experiences tested my resilience, but ultimately made me a faster learner and more adaptive developer.
-                </p>
-                <br />
-                <br />
-                <br />
-                <p className="text-slate-200 text-xl">
-                    Working with Virtual Medical Missions (VMM) was both rewarding and turbulent. At one point, our internal CS team nearly collapsed - only three of us remained. I stepped up not just to build, but to rebuild the team itself. I organized and led workshops to train incoming developers, helping turn a struggling project into a self-sustaining system. Today, VMM has a growing developer pipeline, and I'm proud to have played a key role in its recovery and growth.
-                </p>
-                <br />
-                <br />
-                <br />
-                <p className="text-slate-200 text-xl">
-                    CVision was one of the most technically difficult things I’ve worked on. I had to connect AWS Lambda, S3, and DynamoDB into a single cohesive system - all from scratch. At the same time, I was diving deep into Python libraries (for NaviGaze) for real-time voice recognition and face tracking. Most of it was unfamiliar territory, and the debugging process was relentless. But by the end, I had built a fully functional, hands-free computing interface. It wasn’t easy, but it was incredibly fulfilling to see it come to life.
-                </p>
-
-                <br />
-                <br />
-                <br />
-            </div>
         </div >
     );
 }

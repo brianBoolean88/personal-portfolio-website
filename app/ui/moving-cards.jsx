@@ -70,7 +70,7 @@ export const InfiniteMovingCards = ({
         )}>
         {items.map((item, idx) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0bg-[#83967b] px-8 py-6 md:w-[450px] border-zinc-700"
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0bg-[#8dd1ff] px-8 py-6 md:w-[450px] border-zinc-700"
             key={item.name}>
             <blockquote>
               <div
@@ -83,11 +83,11 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <span
-                    className="text-sm leading-[1.6] font-extralight text-[#E7EFC7]">
+                    className="text-sm leading-[1.6] font-extralight text-[#8dd1ff]">
                     {item.name}
                   </span>
                   <span
-                    className="text-sm leading-[1.6] font-extralight text-[#E7EFC7]">
+                    className="text-sm leading-[1.6] font-extralight text-[#8dd1ff]">
                     {item.title}
                   </span>
                 </span>
@@ -104,7 +104,7 @@ export const InfiniteMovingCards = ({
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#E7EFC7] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
+                  className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#8dd1ff] hover:text-slate-500 transition-colors duration-300 ease-in-out z-20"
                 >
                   View
                 </a>

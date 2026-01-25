@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
     "@tabler/icons-react": "^3.33.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.15.0",
@@ -23,7 +25,8 @@
     "react-rnd": "^10.5.2",
     "react-type-animation": "^3.2.0",
     "resend": "^4.5.1",
-    "tailwind-merge": "^3.3.0"
+    "tailwind-merge": "^3.3.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
