@@ -128,22 +128,40 @@ const Star = ({ star, mouseX, mouseY }) => {
 };
 
 const ShootingStar = ({ delay }) => {
+  const [mounted, setMounted] = React.useState(false);
+  const [startX, setStartX] = React.useState(0);
+  const [endX, setEndX] = React.useState(0);
+  const [endY, setEndY] = React.useState(0);
+
+  React.useEffect(() => {
+    setMounted(true);
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    setStartX(Math.random() * width);
+    setEndX(Math.random() * width + 300);
+    setEndY(height + 50);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <motion.div
       className="absolute w-1 h-1 bg-white rounded-full"
       initial={{
-        x: Math.random() * window.innerWidth,
+        x: startX,
         y: -50,
         opacity: 0,
       }}
       animate={{
-        x: Math.random() * window.innerWidth + 300,
-        y: window.innerHeight + 50,
+        x: endX,
+        y: endY,
         opacity: [0, 1, 1, 0],
       }}
       transition={{
         duration: 8,
-        delay: delay,
+        delay,
         repeat: Infinity,
         repeatDelay: 10,
         ease: "easeIn",
@@ -153,6 +171,7 @@ const ShootingStar = ({ delay }) => {
     </motion.div>
   );
 };
+
 
 // Demo usage
 export default function Demo() {
