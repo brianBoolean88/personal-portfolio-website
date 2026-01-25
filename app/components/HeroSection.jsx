@@ -106,7 +106,7 @@ const HeroSection = () => {
   return (
     <div className='select-none'>
       <section id="hero">
-        <div className='mt-40 lg:mt-50 lg:mb-0 grid grid-cols-1 lg:grid-cols-12 z-in'>
+        <div className='mt-30 mb-30 lg:mt-40 lg:mb-30 grid grid-cols-1 lg:grid-cols-12 z-in'>
           {/* Left side */}
           <div className='mt-30 mb-10 sm:mb-25 col-span-7 place-self-center text-left '>
             <h1 className="select-none text-white mb-4 text-4xl lg:text-5xl font-extrabold">
@@ -202,7 +202,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div ref={lottieRef} style={{ width: 300, height: 300, margin: "0 auto" }} />
+        <div ref={lottieRef} style={{ width: 300, height: 300, margin: "0 auto" }} className="mt-5" />
 
       </section>
 
