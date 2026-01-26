@@ -8,15 +8,16 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col relative">
-      {/* Remove pointer-events-none and make it interactive */}
       <div className="min-h-screen fixed inset-0 -z-10 h-full w-full">
         <NightSkyBackground className="absolute inset-0 h-full w-full" />
       </div>
       
-      {/* Make sure content is above the background */}
-      <div className="relative z-10">
-        <NavBar />
-        <div className='container mx-auto px-12 py-4 overflow-x-hidden'>
+      {/* Add pointer-events-none here, then re-enable on interactive elements */}
+      <div className="relative z-10 pointer-events-none">
+        <div className="pointer-events-auto">
+          <NavBar />
+        </div>
+        <div className='container mx-auto px-12 py-4 overflow-x-hidden pointer-events-auto'>
           <motion.div
               className='select-none'
               initial={{ opacity: 0, y: 40 }}
@@ -26,7 +27,9 @@ export default function Home() {
             <HeroSection />
           </motion.div>
         </div>
-        <Footer />
+        <div className="pointer-events-auto">
+          <Footer />
+        </div>
       </div>
     </main>
   );

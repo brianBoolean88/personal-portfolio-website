@@ -53,9 +53,12 @@ const NavBar = () => {
                                 </div>
                             </div>
                             
-                            <span className={`font-bold bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] text-transparent bg-clip-text transition-all duration-500 ${
+                            <span className={`font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] animate-gradient transition-all duration-500 ${
                                 scrolled ? 'text-xl' : 'text-2xl'
-                            }`}>
+                            }`}
+                            style={{
+                                backgroundSize: '200% 200%'
+                            }}>
                                 Brian W.
                             </span>
                             
@@ -184,6 +187,22 @@ const NavBar = () => {
                         opacity: 1;
                         transform: translateX(0);
                     }
+                }
+                
+                @keyframes gradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                
+                .animate-gradient {
+                    animation: gradient 4s ease infinite;
                 }
             `}</style>
         </>
