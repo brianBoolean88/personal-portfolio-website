@@ -371,12 +371,14 @@ const projects = () => {
                 <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                            MobileCybench
+                            MobileCybench Research Intern
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
                             MobileCybench - a Research project that I collaborated on with 30+ other researchers to create a mobile cybersecurity benchmark that tests a LLM's ability to detect vulnerabilities in mobile applications.
 
                             Researched and implemented app source building, metadata debugging, APK uninstallation in Git Workflow CI, Creating Git Commit Onerror & Test files, synthetic vulnerabilities.
+
+                            I worked with 30+ students from Berkeley (on my end of tasks) and Stanford on this project. There are 5+ industry level leads directing this project.
                         </p>
                     </div>
                     <img
