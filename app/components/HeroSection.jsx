@@ -185,9 +185,9 @@ const HeroSection = () => {
                   >
                     <div className="rounded-full overflow-hidden w-[325px] h-[325px] sm:w-[375px] sm:h-[375px] lg:w-[400px] lg:h-[400px] bg-transparent relative border">
                       <Image
-                        src="/images/heroimgv5.png"
+                        src="/images/heroimgv7.png"
                         alt="Hero Image"
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] lg:w-[500px] lg:h-[500px] object-cover"
+                        className="absolute top-5/8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] lg:w-[500px] lg:h-[500px] object-cover"
                         width={500}
                         height={500}
                       />
