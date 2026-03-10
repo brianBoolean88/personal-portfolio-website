@@ -1,6 +1,7 @@
 "use client"
 import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 import { CardBody, CardContainer, CardItem } from "/app/ui/3d-card";
 import ThreeDPin from './ThreeDPin'
@@ -216,7 +217,7 @@ const HeroSection = () => {
             Me
           </h1>
           <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-          <p className='text-[#ADB7BE] text-center text-base sm:text-lg lg:text-xl mt-7'>
+          <p className='text-[#ffffff] text-center text-base sm:text-lg lg:text-xl mt-7'>
             I’m a
             <PointerHighlight
               rectangleClassName="bg-[#4A5568] leading-loose"
@@ -259,6 +260,25 @@ const HeroSection = () => {
             />
           </div>
         </div>
+        
+        <section id="projects">
+        <div className='text-[#AEC8A4] p-8 mt-8 mb-12'>
+          <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff]'>
+              Projects
+            </span>
+          </h1>
+          <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
+          <div className="flex justify-center mt-8">
+            <Link href="/projects">
+              <button className="bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">
+                View Projects
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+        
         <div className='text-[#AEC8A4] p-8 mt-8 mb-12'>
           <h1 className="text-white mb-4 text-4xl lg:text-5xl font-extrabold text-center">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff]'>

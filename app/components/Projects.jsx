@@ -368,6 +368,52 @@ const projects = () => {
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-fuchsia-950/60 min-h-[500px] lg:min-h-[600px]">
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            UnstableREM: LLM Tool-Calling Pipeline for Procedural World Generation
+                        </h2>
+                        <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+                            Built a real-time pipeline that translates eye tracking data into dynamic Roblox world generation commands, powered by Meta: Llama 3.2 3B Instruct via OpenRouter's tool-calling API.
+                        </p>
+                        <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+                            Engineered pre-batching to optimize LLM API throughput, reducing latency across live generation loops. Documented the entire build on YouTube, garnering up 3,000+ views.
+                        </p>
+                        <div className="flex flex-row">
+                            <Image
+                                src={`/images/SVG/link.svg`}
+                                alt={'LINK'}
+                                width={25}
+                                height={25}
+                                className="mb-1 filter invert brightness-0"
+                            />
+                            <a
+                                href="https://www.youtube.com/watch?v=u_h5yA71mVE&t"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#6c7258] hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                            >
+                                View Video
+                            </a>
+                            <a
+                                href="https://github.com/BlueHarper/AI-UnstableREM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-slate-500 text-white text-base text-left hover:bg-[#747963] hover:text-slate-900 transition-colors duration-300 ease-in-out z-20"
+                            >
+                                View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <img
+                        src="/images/unstablerem.png"
+                        width={700}
+                        height={500}
+                        alt="UnstableREM"
+                        className="grayscale filter absolute -right-8 lg:right-[0%] -bottom-17 rounded-2xl lg:w-150  lg:h-100 sm:w-60 sm:h-60 w-50 h-40 object-cover"
+                    />
+                </WobbleCard>
+                
                 <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">

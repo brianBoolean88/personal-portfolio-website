@@ -93,7 +93,7 @@ const NavBar = () => {
                             {/* CTA Button */}
                             <li className="ml-8">
                                 <a
-                                    href="/files/Brian Wang's Resume.pdf"
+                                    href="/files/Brian W's Resume.pdf"
                                     download
                                     className="group relative px-12 py-3.5 bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] rounded-full font-semibold text-gray-900 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-[#2e3b4e]/50 hover:scale-105"
                                 >
