@@ -374,7 +374,7 @@ const projects = () => {
                             UnstableREM: LLM Tool-Calling Pipeline for Procedural World Generation
                         </h2>
                         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-                            Built a real-time pipeline that translates eye tracking data into dynamic Roblox world generation commands, powered by Meta: Llama 3.2 3B Instruct via OpenRouter's tool-calling API.
+                            Built a real-time pipeline that translates eye tracking data into dynamic Roblox world generation commands, powered by Meta: Llama 3.2 3B Instruct via a tool-calling pipeline that I created myself, end-to-end on both Roblox and Python.
                         </p>
                         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
                             Engineered pre-batching to optimize LLM API throughput, reducing latency across live generation loops. Documented the entire build on YouTube, garnering up 3,000+ views.
