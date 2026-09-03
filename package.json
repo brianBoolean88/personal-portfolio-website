@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-label": "^2.1.7",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@tabler/icons-react": "^3.33.0",
@@ -21,10 +20,8 @@
     "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-google-recaptcha": "^3.1.0",
     "react-rnd": "^10.5.2",
     "react-type-animation": "^3.2.0",
-    "resend": "^4.5.1",
     "tailwind-merge": "^3.3.0",
     "three": "^0.182.0"
   },

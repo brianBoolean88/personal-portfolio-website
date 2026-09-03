@@ -1,14 +1,7 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React from "react";
 import { AnimatedTestimonials } from "/app/ui/animated-testimonials";
-import { Label } from "/app/ui/label.jsx";
-import { Input } from "/app/ui/input.jsx";
-import { cn } from "/lib/utils";
-import ReCAPTCHA from "react-google-recaptcha";
-
-const SITE_KEY =
-    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
 
 const contactMethods = [
     {
@@ -41,133 +34,11 @@ const contactMethods = [
     },
 ];
 
-const BottomGradient = () => {
-    return (
-        <>
-            <span
-                className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-[#8dd1ff] to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
-            <span
-                className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-[#8dd1ff] to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
-        </>
-    );
-};
-
-const LabelInputContainer = ({
-    children,
-    className
-}) => {
-    return (
-        <div className={cn("flex w-full flex-col space-y-2", className)}>
-            {children}
-        </div>
-    );
-};
-
-
 const Contact = () => {
-    const recaptchaRef = useRef(null);
-    const [captchaToken, setCaptchaToken] = useState("");
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const data = {
-            firstname: form.firstname.value,
-            lastname: form.lastname.value,
-            email: form.email.value,
-            subject: form.subject.value,
-            message: form.message.value,
-        };
-
-        if (!data.firstname || !data.lastname || !data.email || !data.subject || !data.message) {
-            alert("Please fill in all fields.");
-            return;
-        }
-
-        if (!captchaToken) {
-            alert("Please complete the reCAPTCHA.");
-            return;
-        }
-
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...data, token: captchaToken }),
-            });
-            const result = await res.json().catch(() => ({}));
-            if (res.ok) {
-                alert(result.skippedMail ? 'Message accepted (mail is not configured locally).' : 'Message sent!');
-                form.reset();
-                setCaptchaToken("");
-                recaptchaRef.current?.reset();
-            } else {
-                alert(result.error || 'Failed to send message.');
-                recaptchaRef.current?.reset();
-                setCaptchaToken("");
-            }
-        } catch (err) {
-            alert('Error sending message.');
-        }
-    };
     return (
-        <div className="select-none mt-50 mb-50 lg:mb-100 w-full h-full">
+        <div className="select-none mt-20 mb-20 w-full h-full">
             <AnimatedTestimonials contact={contactMethods} />
-
-            <div
-                className="mx-auto w-full lg:w-[800px] rounded-none bg-transparent p-4 md:rounded-2l md:p-8 mt-20">
-                <h2 className="text-3xl font-bold text-white ">
-                    Contact Form
-                </h2>
-                <p className="mt-2 max-w-sm text-sm text-neutral-400">
-                    If there is no ReCAPTCHA, please reload the page or disable your adblocker. If you are still having issues, please contact me through my social media links above. You cannot send a message without completing the ReCAPTCHA.
-                </p>
-                <form className="my-8" onSubmit={handleSubmit}>
-                    <div
-                        className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
-                        <LabelInputContainer>
-                            <Label htmlFor="firstname">First name</Label>
-                            <Input id="firstname" name="firstname" placeholder="Brian" type="text" />
-                        </LabelInputContainer>
-                        <LabelInputContainer>
-                            <Label htmlFor="lastname">Last name</Label>
-                            <Input id="lastname" name="lastname" placeholder="Wang" type="text" />
-                        </LabelInputContainer>
-                    </div>
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="email">Email Address</Label>
-                        <Input id="email" name="email" placeholder="88brianw@gmail.com" type="email" />
-                    </LabelInputContainer>
-
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="subject">Subject</Label>
-                        <Input id="subject" name="subject" placeholder="Catching Up" type="text" />
-                    </LabelInputContainer>
-
-                    <LabelInputContainer className="mb-4">
-                        <Label htmlFor="message">Message</Label>
-                        <Input id="message" name="message" placeholder="What's up man?" type="textarea" />
-                    </LabelInputContainer>
-
-                    <ReCAPTCHA
-                        sitekey={SITE_KEY}
-                        ref={recaptchaRef}
-                        className="ml-3 mb-4 mx-auto"
-                        onChange={setCaptchaToken}
-                    />
-
-                    <button
-                        className="group/btn relative block h-10 w-full rounded-md bg-[#2e3b4e] font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset][0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
-                        type="submit">
-                        Send Message
-                        <BottomGradient />
-                    </button>
-
-
-
-                </form>
-            </div>
-        </div >
+        </div>
     );
 }
 
