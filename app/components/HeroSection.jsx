@@ -182,15 +182,16 @@ const HeroSection = () => {
   w-[325px] h-[325px] 
   sm:w-[375px] sm:h-[375px] 
   lg:w-[400px] lg:h-[400px]
-  bg-gradient-to-br from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff]"
+  bg-gradient-to-br from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] shrink-0"
                   >
-                    <div className="rounded-full overflow-hidden w-[325px] h-[325px] sm:w-[375px] sm:h-[375px] lg:w-[400px] lg:h-[400px] bg-transparent relative border">
+                    <div className="relative overflow-hidden rounded-full w-full h-full bg-[#1a1a1a] aspect-square">
                       <Image
-                        src="/images/hero_imgv4.png"
-                        alt="Hero Image"
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] lg:w-[500px] lg:h-[500px] object-cover"
-                        width={500}
-                        height={500}
+                        src="/images/hero_landing.jpg"
+                        alt="Brian Wang"
+                        fill
+                        priority
+                        sizes="(max-width: 640px) 325px, (max-width: 1024px) 375px, 400px"
+                        className="object-cover object-[50%_16%]"
                       />
                     </div>
                   </div>
@@ -238,7 +239,13 @@ const HeroSection = () => {
             Experience
           </h1>
           <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-          <div className='mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12 gap-x-40 lg:gap-x-60 justify-center items-center'>
+          <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 justify-items-center max-w-4xl mx-auto'>
+            <ThreeDPin
+              title={"BlueRobins Mobile & AI Developer"}
+              description={"Shipped the company’s end-to-end mobile app from concept to production. Built an AI retrieval bot with PostgreSQL pgvector and RPC cosine search, and tightened security with AWS secret rotation, Supabase RLS, and isolated CRON/JWT auth."}
+              href={"https://www.bluerobins.com/"}
+              monogram={"BR"}
+            />
             <ThreeDPin
               title={"MobileCybench Research Intern"}
               description={"Researched and implemented app source building, metadata debugging, APK uninstallation in Git Workflow CI, Creating Git Commit Onerror & Test files, synthetic vulnerabilities. There is no link unfortunately, as it is a private repo."}
@@ -246,17 +253,16 @@ const HeroSection = () => {
               href={""}
             />
             <ThreeDPin
-              title={"3D Engineering Teacher Intern"}
-              description={"I worked with this institution. Taught 3D Design (Robotics, Unity) to high school students at Coding Stem Academy over summer, covering Unity, C#, and game design principles. Created engaging lesson plans and hands-on projects."}
-              img={"/images/coding_stem_academy.jpg"}
-              href={"http://codingstemacademy.com/"}
-              className="mx-auto"
-            />
-            <ThreeDPin
               title={"VMM CS Lead Intern"}
               description={"Led a team of CS interns at VMM, developing web-based applications such as the EMR System, Patient Portal, and Telemedicine System. Utilized HTML, CSS, JS, Quart/Flask Python, SQL."}
               img={"/images/VMM.jpg"}
               href={"https://www.vmmhealthcare.org/"}
+            />
+            <ThreeDPin
+              title={"3D Engineering Teacher Intern"}
+              description={"Taught 3D Design (Robotics, Unity) to high school students at Coding Stem Academy over summer, covering Unity, C#, and game design principles. Created engaging lesson plans and hands-on projects."}
+              img={"/images/coding_stem_academy.jpg"}
+              href={"http://codingstemacademy.com/"}
             />
           </div>
         </div>
@@ -269,13 +275,35 @@ const HeroSection = () => {
             </span>
           </h1>
           <div className="mx-auto mb-6 h-1 w-60 lg:w-90 rounded bg-gray-400 opacity-40"></div>
-          <div className="flex justify-center mt-8">
-            <Link href="/projects">
-              <button className="bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="mx-auto mt-10 max-w-3xl"
+          >
+            <Link
+              href="/projects"
+              className="group relative block overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 text-left backdrop-blur-sm transition-all duration-500 hover:border-[#8dd1ff]/40 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_-20px_rgba(77,166,255,0.45)]"
+            >
+              <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#8dd1ff]">
+                Selected work
+              </p>
+              <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-white">
+                Games, research, and shipped products
+              </h2>
+              <p className="mt-3 max-w-xl text-white/70">
+                BlueRobins, UnstableREM, MobileCybench, Interdex.ai, and a full archive of programming and studio projects.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#2e3b4e] via-[#4da6ff] to-[#8dd1ff] px-6 py-3 font-semibold text-white shadow-lg shadow-[#4da6ff]/20 transition-transform duration-300 group-hover:scale-[1.04]">
                 View Projects
-              </button>
+                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
         

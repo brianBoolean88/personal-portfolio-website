@@ -12,6 +12,20 @@ const SITE_KEY = "6LcwvlIrAAAAAL02hM9SCYwF3AByO7IISjyQeiv0";
 const contactMethods = [
     {
         quote:
+            "This is my LinkedIn profile. Feel free to connect with me for professional networking and opportunities.",
+        name: "LinkedIn",
+        src: "/images/SVG/linkedin.svg",
+        href: "https://www.linkedin.com/in/brian-wang-professional/",
+    },
+    {
+        quote:
+            "This is my Instagram profile. Follow me for updates on my personal projects and interests.",
+        name: "Instagram",
+        src: "/images/SVG/instagram.svg",
+        href: "https://www.instagram.com/brianwanggg/",
+    },
+    {
+        quote:
             "This is my newer GitHub account. I lost access to my old one, so please view this one for new updates and contributions.",
         name: "Github (New)",
         src: "/images/SVG/github1.svg",
@@ -23,20 +37,6 @@ const contactMethods = [
         name: "Github (Old)",
         src: "/images/SVG/github2.svg",
         href: "https://github.com/88BrianW",
-    },
-    {
-        quote:
-            "This is my linkedIn profile. Feel free to connect with me for professional networking and opportunities.",
-        name: "LinkedIn",
-        src: "/images/SVG/linkedin.svg",
-        href: "https://www.linkedin.com/in/brian-wang-professional/",
-    },
-    {
-        quote:
-            "This is my instagram profile. Follow me for updates on my personal projects and interests.",
-        name: "Instagram",
-        src: "/images/SVG/instagram.svg",
-        href: "https://www.instagram.com/brianwanggg/",
     },
 ];
 

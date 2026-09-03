@@ -368,6 +368,37 @@ const projects = () => {
             </div>
 
             <div className="mb-50 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-[#123a73] min-h-[420px] lg:min-h-[420px]">
+                    <div className="max-w-3xl">
+                        <h2 className="max-w-sm md:max-w-2xl text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            BlueRobins — Mobile & AI Developer
+                        </h2>
+                        <p className="mt-4 max-w-2xl text-left text-base/6 text-neutral-200">
+                            SkyDeck startup. Engineered and shipped the company’s full end-to-end mobile application codebase from concept to production.
+                        </p>
+                        <p className="mt-4 max-w-2xl text-left text-base/6 text-neutral-200">
+                            Built an AI retrieval bot with PostgreSQL (pgvector) and custom RPC functions for real-time cosine similarity search across embeddings. Strengthened security with AWS secret rotation, Supabase Row-Level Security, and isolated CRON/JWT auth.
+                        </p>
+                        <div className="flex flex-row mt-6">
+                            <Image
+                                src={`/images/SVG/link.svg`}
+                                alt={'LINK'}
+                                width={25}
+                                height={25}
+                                className="mb-1 filter invert brightness-0"
+                            />
+                            <a
+                                href="https://www.bluerobins.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="select-none px-3 py-2 w-full lg:w-fit rounded-full bg-transparent text-white text-base text-left hover:bg-[#1b4f96] hover:text-slate-200 transition-colors duration-300 ease-in-out z-20"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </WobbleCard>
+
                 <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-fuchsia-950/60 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -414,7 +445,7 @@ const projects = () => {
                     />
                 </WobbleCard>
                 
-                <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-sky-550 min-h-[500px] lg:min-h-[600px]">
+                <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-sky-800 min-h-[500px] lg:min-h-[600px]">
                     <div className="max-w-sm">
                         <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                             MobileCybench Research Intern
