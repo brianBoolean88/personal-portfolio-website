@@ -8,8 +8,7 @@ import { cn } from "/lib/utils";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const SITE_KEY =
-    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ||
-    "6LcwvlIrAAAAAL02hM9SCYwF3AByO7IISjyQeiv0";
+    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
 
 const contactMethods = [
     {
